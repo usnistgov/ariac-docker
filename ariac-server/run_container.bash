@@ -6,7 +6,7 @@
 # --- 1) The target container name.
 # --- 2) The name of the docker image from which to create and run the container.
 # --- 3) Optional extra arguments for docker run command. E.g., some extra -v options
-# --- 4) An optional command to execute in the run container. E.g. /bin/bash 
+# --- 4) An optional command to execute in the run container. E.g. /bin/bash
 # Example command line:
 # ./run_container.bash test ariac-server "-v logs:/home/cloudsim/gazebo-logs" /bin/bash
 
@@ -72,6 +72,6 @@ docker run --rm --name ${CONTAINER} \
   -v /dev/log:/dev/log \
   ${DOCKER_EXTRA_ARGS} \
   ${DOCKER_GPU_PARAMS} \
-  ${DOCKER_DISPLAY_PARAMS} \
+  ${DISPLAY_PARAMS} \
   ${IMAGE_NAME} \
   ${COMMAND}
