@@ -39,7 +39,6 @@ RUN apt-get update && apt-get install -q -y \
     ros-melodic-transmission-interface \
     ros-melodic-ros-base \
     ros-melodic-moveit \
-
     wget \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -61,6 +60,7 @@ RUN mkdir -p /tmp/ariac_ws/src
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                   cd /tmp/ariac_ws/src && \
                   catkin_init_workspace"
+
 RUN git clone https://github.com/usnistgov/ARIAC.git
 
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
@@ -77,6 +77,7 @@ RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
 RUN git clone \
       https://github.com/osrf/ariac-gazebo_ros_pkgs.git /tmp/ros_ws/src/gazebo_ros_pkgs \
       -b ariac-network-melodic
+
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                   cd /tmp/ros_ws/ && \
                   catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/melodic -j2 install "
