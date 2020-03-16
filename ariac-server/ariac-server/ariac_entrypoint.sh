@@ -8,7 +8,7 @@ source "/usr/share/gazebo/setup.sh"
 source "/opt/ros/melodic/setup.bash" > /dev/null
 
 # setup ariac environment
-source "/tmp/ros_ws/devel/setup.bash"
+source "/home/ariac/ariac_ws/devel/setup.bash"
 #source "/opt/ros/melodic/etc/catkin/profile.d/99_osrf_gear_setup.sh"
 echo "ariac entrypoint executed"
 

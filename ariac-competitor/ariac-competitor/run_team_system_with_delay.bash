@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+YELLOW='\033[0;33m'
+NOCOLOR='\033[0m'
+echo -e "${YELLOW}Running team system with delay${NOCOLOR}"
+
 echo "Waiting for ROS master"
 . /opt/ros/*/setup.bash
 until rostopic list ; do sleep 1; done

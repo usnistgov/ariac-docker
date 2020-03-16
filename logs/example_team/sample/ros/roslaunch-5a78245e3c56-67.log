@@ -1,0 +1,265 @@
+[roslaunch][INFO] 2020-03-16 14:20:49,574: Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-03-16 14:20:49,589: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-03-16 14:20:49,590: roslaunch starting with args ['/opt/ros/melodic/bin/roslaunch', '/tmp/ariac/gear.launch', 'world_path:=/tmp/ariac/ariac.world', 'gear_urdf_xacro:=/tmp/ariac/gear.urdf.xacro', 'gantry_urdf_xacro:=/tmp/ariac/gantry.urdf.xacro', 'verbose:=true', 'gui:=false']
+[roslaunch][INFO] 2020-03-16 14:20:49,590: roslaunch env is {'ARIAC_EXIT_ON_COMPLETION': '1', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'LANG': 'en_US.UTF-8', 'ARIAC_COMPETITION': '1', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_PYTHON_VERSION': '2', 'USERNAME': 'ariac', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}
+[roslaunch][INFO] 2020-03-16 14:20:49,590: starting in server mode
+[roslaunch.parent][INFO] 2020-03-16 14:20:49,590: starting roslaunch parent run
+[roslaunch][INFO] 2020-03-16 14:20:49,590: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-03-16 14:20:50,199: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2020-03-16 14:20:50,199: loading config file /tmp/ariac/gear.launch
+[roslaunch][INFO] 2020-03-16 14:20:50,200: Added node of type [nist_gear/startup.sh] in namespace [/]
+[roslaunch][INFO] 2020-03-16 14:20:50,239: Added node of type [gazebo_ros/gzserver] in namespace [/]
+[roslaunch][INFO] 2020-03-16 14:20:50,319: Added node of type [robot_state_publisher/robot_state_publisher] in namespace [/]
+[roslaunch][INFO] 2020-03-16 14:20:50,320: Added node of type [gazebo_ros/spawn_model] in namespace [/]
+[roslaunch][INFO] 2020-03-16 14:20:50,701: Added node of type [controller_manager/spawner] in namespace [/ariac/gantry/]
+[roslaunch][INFO] 2020-03-16 14:20:50,701: Added node of type [robot_state_publisher/robot_state_publisher] in namespace [/ariac/gantry/]
+[roslaunch][INFO] 2020-03-16 14:20:50,701: Added node of type [gazebo_ros/spawn_model] in namespace [/ariac/gantry/]
+[roslaunch][INFO] 2020-03-16 14:20:50,731: Added node of type [controller_manager/spawner] in namespace [/ariac/gantry/]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: Added node of type [nist_gear/gazebo_unpauser.py] in namespace [/]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [nist_gear/startup.sh]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [gazebo_ros/gzserver]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [controller_manager/spawner]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [controller_manager/spawner]
+[roslaunch][INFO] 2020-03-16 14:20:50,732: ... selected machine [] for node of type [nist_gear/gazebo_unpauser.py]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:50,750: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-03-16 14:20:50,750: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-03-16 14:20:50,751: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-03-16 14:20:50,751: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-03-16 14:20:50,751: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-03-16 14:20:50,751: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-03-16 14:20:50,751: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-03-16 14:20:50,751: Started XML-RPC server [http://172.18.0.22:45123/]
+[xmlrpc][INFO] 2020-03-16 14:20:50,751: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-03-16 14:20:50,762: started roslaunch server http://172.18.0.22:45123/
+[roslaunch.parent][INFO] 2020-03-16 14:20:50,762: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-03-16 14:20:50,763: master.is_running[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:50,764: auto-starting new master
+[roslaunch][INFO] 2020-03-16 14:20:50,764: create_master_process: rosmaster, /opt/ros/melodic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2020-03-16 14:20:50,764: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:50,764: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:50,764: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2020-03-16 14:20:50,764: process[master]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:50,764: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/master.log']]
+[roslaunch][INFO] 2020-03-16 14:20:50,764: process[master]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:51,233: process[master]: started with pid [83]
+[roslaunch][INFO] 2020-03-16 14:20:51,233: master.is_running[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:51,333: master.is_running[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:51,434: master.is_running[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:51,436: master.is_running[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:51,437: ROS_MASTER_URI=http://172.18.0.22:11311
+[roslaunch][INFO] 2020-03-16 14:20:51,438: setting /run_id to dcd44ad0-67b2-11ea-b71e-0242ac120016
+[roslaunch][INFO] 2020-03-16 14:20:51,439: setting /roslaunch/uris/host_172_18_0_22__45123' to http://172.18.0.22:45123/
+[roslaunch][INFO] 2020-03-16 14:20:51,442: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2020-03-16 14:20:51,442: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:51,442: process[rosout-1]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:51,491: process[rosout-1]: args[[u'/opt/ros/melodic/lib/rosout/rosout', u'__name:=rosout']]
+[roslaunch][INFO] 2020-03-16 14:20:51,491: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:51,491: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:51,491: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2020-03-16 14:20:51,491: ... registered process [rosout-1]
+[roslaunch][INFO] 2020-03-16 14:20:51,491: process[rosout-1]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:51,492: process[rosout-1]: start w/ args [[u'/opt/ros/melodic/lib/rosout/rosout', u'__name:=rosout', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/rosout-1.log']]
+[roslaunch][INFO] 2020-03-16 14:20:51,492: process[rosout-1]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:51,964: process[rosout-1]: started with pid [94]
+[roslaunch][INFO] 2020-03-16 14:20:51,965: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2020-03-16 14:20:51,965: load_parameters starting ...
+[roslaunch][INFO] 2020-03-16 14:20:52,036: ... load_parameters complete
+[roslaunch][INFO] 2020-03-16 14:20:52,037: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-03-16 14:20:52,037: ... preparing to launch node of type [nist_gear/startup.sh]
+[roslaunch][INFO] 2020-03-16 14:20:52,037: create_node_process: package[nist_gear] type[startup.sh] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:52,037: process[startup_ariac-2]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:52,044: process[startup_ariac-2]: args[[u'/home/ariac/ariac_ws/src/nist_gear/script/startup.sh', u'__name:=startup_ariac']]
+[roslaunch][INFO] 2020-03-16 14:20:52,044: ... created process [startup_ariac-2]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,044: ProcessMonitor.register[startup_ariac-2]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,044: ProcessMonitor.register[startup_ariac-2] complete
+[roslaunch][INFO] 2020-03-16 14:20:52,045: ... registered process [startup_ariac-2]
+[roslaunch][INFO] 2020-03-16 14:20:52,045: process[startup_ariac-2]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:52,045: process[startup_ariac-2]: start w/ args [[u'/home/ariac/ariac_ws/src/nist_gear/script/startup.sh', u'__name:=startup_ariac', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/startup_ariac-2.log']]
+[roslaunch][INFO] 2020-03-16 14:20:52,045: process[startup_ariac-2]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:52,500: process[startup_ariac-2]: started with pid [98]
+[roslaunch][INFO] 2020-03-16 14:20:52,500: ... successfully launched [startup_ariac-2]
+[roslaunch][INFO] 2020-03-16 14:20:52,502: ... preparing to launch node of type [gazebo_ros/gzserver]
+[roslaunch][INFO] 2020-03-16 14:20:52,502: create_node_process: package[gazebo_ros] type[gzserver] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:52,502: process[gazebo-3]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:52,503: process[gazebo-3]: args[[u'/opt/ros/melodic/lib/gazebo_ros/gzserver', '-u', '--verbose', '-e', 'ode', '-r', '--record_period', '0.01', '--record_path=/root/.ariac/log/gazebo', '/tmp/ariac/ariac.world', u'__name:=gazebo']]
+[roslaunch][INFO] 2020-03-16 14:20:52,503: ... created process [gazebo-3]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,503: ProcessMonitor.register[gazebo-3]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,503: ProcessMonitor.register[gazebo-3] complete
+[roslaunch][INFO] 2020-03-16 14:20:52,503: ... registered process [gazebo-3]
+[roslaunch][INFO] 2020-03-16 14:20:52,503: process[gazebo-3]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:52,504: process[gazebo-3]: start w/ args [[u'/opt/ros/melodic/lib/gazebo_ros/gzserver', '-u', '--verbose', '-e', 'ode', '-r', '--record_period', '0.01', '--record_path=/root/.ariac/log/gazebo', '/tmp/ariac/ariac.world', u'__name:=gazebo', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/gazebo-3.log']]
+[roslaunch][INFO] 2020-03-16 14:20:52,504: process[gazebo-3]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:52,554: [startup_ariac-2] process has finished cleanly
+log file: /root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/startup_ariac-2*.log
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,554: ProcessMonitor.unregister[startup_ariac-2] starting
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,555: ProcessMonitor.unregister[startup_ariac-2] complete
+[roslaunch][INFO] 2020-03-16 14:20:52,959: process[gazebo-3]: started with pid [105]
+[roslaunch][INFO] 2020-03-16 14:20:52,960: ... successfully launched [gazebo-3]
+[roslaunch][INFO] 2020-03-16 14:20:52,960: ... preparing to launch node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2020-03-16 14:20:52,960: create_node_process: package[robot_state_publisher] type[robot_state_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:52,960: process[sensors_tf_publisher-4]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:52,961: process[sensors_tf_publisher-4]: args[[u'/opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher', u'robot_description:=sensors_description', u'__name:=sensors_tf_publisher']]
+[roslaunch][INFO] 2020-03-16 14:20:52,961: ... created process [sensors_tf_publisher-4]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,961: ProcessMonitor.register[sensors_tf_publisher-4]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:52,961: ProcessMonitor.register[sensors_tf_publisher-4] complete
+[roslaunch][INFO] 2020-03-16 14:20:52,961: ... registered process [sensors_tf_publisher-4]
+[roslaunch][INFO] 2020-03-16 14:20:52,961: process[sensors_tf_publisher-4]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:52,961: process[sensors_tf_publisher-4]: start w/ args [[u'/opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher', u'robot_description:=sensors_description', u'__name:=sensors_tf_publisher', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/sensors_tf_publisher-4.log']]
+[roslaunch][INFO] 2020-03-16 14:20:52,961: process[sensors_tf_publisher-4]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:53,432: process[sensors_tf_publisher-4]: started with pid [109]
+[roslaunch][INFO] 2020-03-16 14:20:53,432: ... successfully launched [sensors_tf_publisher-4]
+[roslaunch][INFO] 2020-03-16 14:20:53,432: ... preparing to launch node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2020-03-16 14:20:53,432: create_node_process: package[gazebo_ros] type[spawn_model] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:53,432: process[spawn_gazebo_sensors-5]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:53,433: process[spawn_gazebo_sensors-5]: args[[u'/opt/ros/melodic/lib/gazebo_ros/spawn_model', '-gazebo_namespace', '/gazebo', '-urdf', '-param', 'sensors_description', '-model', 'gear_objects', '-x', '0.0', '-y', '0.0', '-z', '0.0', u'__name:=spawn_gazebo_sensors']]
+[roslaunch][INFO] 2020-03-16 14:20:53,434: ... created process [spawn_gazebo_sensors-5]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:53,434: ProcessMonitor.register[spawn_gazebo_sensors-5]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:53,434: ProcessMonitor.register[spawn_gazebo_sensors-5] complete
+[roslaunch][INFO] 2020-03-16 14:20:53,434: ... registered process [spawn_gazebo_sensors-5]
+[roslaunch][INFO] 2020-03-16 14:20:53,434: process[spawn_gazebo_sensors-5]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:53,434: process[spawn_gazebo_sensors-5]: start w/ args [[u'/opt/ros/melodic/lib/gazebo_ros/spawn_model', '-gazebo_namespace', '/gazebo', '-urdf', '-param', 'sensors_description', '-model', 'gear_objects', '-x', '0.0', '-y', '0.0', '-z', '0.0', u'__name:=spawn_gazebo_sensors', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/spawn_gazebo_sensors-5.log']]
+[roslaunch][INFO] 2020-03-16 14:20:53,434: process[spawn_gazebo_sensors-5]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:53,900: process[spawn_gazebo_sensors-5]: started with pid [163]
+[roslaunch][INFO] 2020-03-16 14:20:53,901: ... successfully launched [spawn_gazebo_sensors-5]
+[roslaunch][INFO] 2020-03-16 14:20:53,901: ... preparing to launch node of type [controller_manager/spawner]
+[roslaunch][INFO] 2020-03-16 14:20:53,901: create_node_process: package[controller_manager] type[spawner] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:53,901: process[ariac/gantry/joint_state_controller_spawner-6]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'ROS_NAMESPACE': u'/ariac/gantry', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:53,902: process[ariac/gantry/joint_state_controller_spawner-6]: args[[u'/opt/ros/melodic/lib/controller_manager/spawner', 'joint_state_controller', u'__name:=joint_state_controller_spawner']]
+[roslaunch][INFO] 2020-03-16 14:20:53,902: ... created process [ariac/gantry/joint_state_controller_spawner-6]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:53,902: ProcessMonitor.register[ariac/gantry/joint_state_controller_spawner-6]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:53,902: ProcessMonitor.register[ariac/gantry/joint_state_controller_spawner-6] complete
+[roslaunch][INFO] 2020-03-16 14:20:53,902: ... registered process [ariac/gantry/joint_state_controller_spawner-6]
+[roslaunch][INFO] 2020-03-16 14:20:53,902: process[ariac/gantry/joint_state_controller_spawner-6]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:53,902: process[ariac/gantry/joint_state_controller_spawner-6]: start w/ args [[u'/opt/ros/melodic/lib/controller_manager/spawner', 'joint_state_controller', u'__name:=joint_state_controller_spawner', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/ariac-gantry-joint_state_controller_spawner-6.log']]
+[roslaunch][INFO] 2020-03-16 14:20:53,902: process[ariac/gantry/joint_state_controller_spawner-6]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:54,370: process[ariac/gantry/joint_state_controller_spawner-6]: started with pid [170]
+[roslaunch][INFO] 2020-03-16 14:20:54,370: ... successfully launched [ariac/gantry/joint_state_controller_spawner-6]
+[roslaunch][INFO] 2020-03-16 14:20:54,370: ... preparing to launch node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2020-03-16 14:20:54,371: create_node_process: package[robot_state_publisher] type[robot_state_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:54,371: process[ariac/gantry/robot_state_publisher-7]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'ROS_NAMESPACE': u'/ariac/gantry', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:54,372: process[ariac/gantry/robot_state_publisher-7]: args[[u'/opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher', u'__name:=robot_state_publisher']]
+[roslaunch][INFO] 2020-03-16 14:20:54,372: ... created process [ariac/gantry/robot_state_publisher-7]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:54,373: ProcessMonitor.register[ariac/gantry/robot_state_publisher-7]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:54,373: ProcessMonitor.register[ariac/gantry/robot_state_publisher-7] complete
+[roslaunch][INFO] 2020-03-16 14:20:54,373: ... registered process [ariac/gantry/robot_state_publisher-7]
+[roslaunch][INFO] 2020-03-16 14:20:54,373: process[ariac/gantry/robot_state_publisher-7]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:54,373: process[ariac/gantry/robot_state_publisher-7]: start w/ args [[u'/opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher', u'__name:=robot_state_publisher', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/ariac-gantry-robot_state_publisher-7.log']]
+[roslaunch][INFO] 2020-03-16 14:20:54,373: process[ariac/gantry/robot_state_publisher-7]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:54,834: process[ariac/gantry/robot_state_publisher-7]: started with pid [173]
+[roslaunch][INFO] 2020-03-16 14:20:54,834: ... successfully launched [ariac/gantry/robot_state_publisher-7]
+[roslaunch][INFO] 2020-03-16 14:20:54,834: ... preparing to launch node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2020-03-16 14:20:54,834: create_node_process: package[gazebo_ros] type[spawn_model] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:54,835: process[ariac/gantry/gantry_spawner-8]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'ROS_NAMESPACE': u'/ariac/gantry', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:54,836: process[ariac/gantry/gantry_spawner-8]: args[[u'/opt/ros/melodic/lib/gazebo_ros/spawn_model', '-urdf', '-model', 'gantry', '-param', 'robot_description', '-J', 'small_long_joint', '0', '-J', 'torso_rail_joint', '0', '-J', 'torso_base_main_joint', '0', '-J', 'left_shoulder_pan_joint', '0.0', '-J', 'left_shoulder_lift_joint', '-.7854', '-J', 'left_elbow_joint', '1.5708', '-J', 'left_wrist_1_joint', '-.7854', '-J', 'left_wrist_2_joint', '1.5708', '-J', 'left_wrist_3_joint', '0', '-J', 'right_shoulder_pan_joint', '3.1416', '-J', 'right_shoulder_lift_joint', '-.7854', '-J', 'right_elbow_joint', '1.5708', '-J', 'right_wrist_1_joint', '-.7854', '-J', 'right_wrist_2_joint', '1.5708', '-J', 'right_wrist_3_joint', '0', u'__name:=gantry_spawner']]
+[roslaunch][INFO] 2020-03-16 14:20:54,836: ... created process [ariac/gantry/gantry_spawner-8]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:54,836: ProcessMonitor.register[ariac/gantry/gantry_spawner-8]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:54,837: ProcessMonitor.register[ariac/gantry/gantry_spawner-8] complete
+[roslaunch][INFO] 2020-03-16 14:20:54,837: ... registered process [ariac/gantry/gantry_spawner-8]
+[roslaunch][INFO] 2020-03-16 14:20:54,837: process[ariac/gantry/gantry_spawner-8]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:54,837: process[ariac/gantry/gantry_spawner-8]: start w/ args [[u'/opt/ros/melodic/lib/gazebo_ros/spawn_model', '-urdf', '-model', 'gantry', '-param', 'robot_description', '-J', 'small_long_joint', '0', '-J', 'torso_rail_joint', '0', '-J', 'torso_base_main_joint', '0', '-J', 'left_shoulder_pan_joint', '0.0', '-J', 'left_shoulder_lift_joint', '-.7854', '-J', 'left_elbow_joint', '1.5708', '-J', 'left_wrist_1_joint', '-.7854', '-J', 'left_wrist_2_joint', '1.5708', '-J', 'left_wrist_3_joint', '0', '-J', 'right_shoulder_pan_joint', '3.1416', '-J', 'right_shoulder_lift_joint', '-.7854', '-J', 'right_elbow_joint', '1.5708', '-J', 'right_wrist_1_joint', '-.7854', '-J', 'right_wrist_2_joint', '1.5708', '-J', 'right_wrist_3_joint', '0', u'__name:=gantry_spawner', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/ariac-gantry-gantry_spawner-8.log']]
+[roslaunch][INFO] 2020-03-16 14:20:54,837: process[ariac/gantry/gantry_spawner-8]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:55,288: process[ariac/gantry/gantry_spawner-8]: started with pid [187]
+[roslaunch][INFO] 2020-03-16 14:20:55,288: ... successfully launched [ariac/gantry/gantry_spawner-8]
+[roslaunch][INFO] 2020-03-16 14:20:55,288: ... preparing to launch node of type [controller_manager/spawner]
+[roslaunch][INFO] 2020-03-16 14:20:55,289: create_node_process: package[controller_manager] type[spawner] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:55,289: process[ariac/gantry/gantry_controller_spawner-9]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'ROS_NAMESPACE': u'/ariac/gantry', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:55,289: process[ariac/gantry/gantry_controller_spawner-9]: args[[u'/opt/ros/melodic/lib/controller_manager/spawner', '--namespace=/ariac/gantry', 'gantry_controller', 'left_arm_controller', 'right_arm_controller', u'__name:=gantry_controller_spawner']]
+[roslaunch][INFO] 2020-03-16 14:20:55,290: ... created process [ariac/gantry/gantry_controller_spawner-9]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:55,290: ProcessMonitor.register[ariac/gantry/gantry_controller_spawner-9]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:55,290: ProcessMonitor.register[ariac/gantry/gantry_controller_spawner-9] complete
+[roslaunch][INFO] 2020-03-16 14:20:55,290: ... registered process [ariac/gantry/gantry_controller_spawner-9]
+[roslaunch][INFO] 2020-03-16 14:20:55,290: process[ariac/gantry/gantry_controller_spawner-9]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:55,290: process[ariac/gantry/gantry_controller_spawner-9]: start w/ args [[u'/opt/ros/melodic/lib/controller_manager/spawner', '--namespace=/ariac/gantry', 'gantry_controller', 'left_arm_controller', 'right_arm_controller', u'__name:=gantry_controller_spawner', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/ariac-gantry-gantry_controller_spawner-9.log']]
+[roslaunch][INFO] 2020-03-16 14:20:55,290: process[ariac/gantry/gantry_controller_spawner-9]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:55,749: process[ariac/gantry/gantry_controller_spawner-9]: started with pid [195]
+[roslaunch][INFO] 2020-03-16 14:20:55,749: ... successfully launched [ariac/gantry/gantry_controller_spawner-9]
+[roslaunch][INFO] 2020-03-16 14:20:55,750: ... preparing to launch node of type [nist_gear/gazebo_unpauser.py]
+[roslaunch][INFO] 2020-03-16 14:20:55,750: create_node_process: package[nist_gear] type[gazebo_unpauser.py] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://172.18.0.22:11311]
+[roslaunch][INFO] 2020-03-16 14:20:55,750: process[gazebo_unpauser-10]: env[{'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'ROS_DISTRO': 'melodic', 'ROS_IP': '172.18.0.22', 'GAZEBO_IP': '127.0.0.1', 'HOME': '/root', 'ARIAC_COMPETITION': '1', 'ROS_LOG_FILENAME': '/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/roslaunch-5a78245e3c56-67.log', 'PATH': '/opt/ros/melodic/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'CMAKE_PREFIX_PATH': '/home/ariac/ariac_ws/devel:/opt/ros/melodic', 'XAUTHORITY': '/tmp/.docker.xauth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ariac/ariac_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'GAZEBO_IP_WHITE_LIST': '127.0.0.1', 'ROS_PYTHON_VERSION': '2', 'ARIAC_EXIT_ON_COMPLETION': '1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'PYTHONPATH': '/home/ariac/ariac_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'USERNAME': 'ariac', 'PKG_CONFIG_PATH': '/home/ariac/ariac_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ariac/ariac_ws/src:/opt/ros/melodic/share', 'GAZEBO_MODEL_PATH': '/home/ariac/ariac_ws/src/nist_gear/models:/usr/share/gazebo-9/models:', 'HOSTNAME': '5a78245e3c56', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ariac/ariac_ws/devel/share/common-lisp', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:', 'PWD': '/home/ariac', 'ROS_MASTER_URI': 'http://172.18.0.22:11311', 'ROS_VERSION': '1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-9:'}]
+[roslaunch][INFO] 2020-03-16 14:20:55,757: process[gazebo_unpauser-10]: args[[u'/home/ariac/ariac_ws/src/nist_gear/script/gazebo_unpauser.py', u'__name:=gazebo_unpauser']]
+[roslaunch][INFO] 2020-03-16 14:20:55,757: ... created process [gazebo_unpauser-10]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:55,757: ProcessMonitor.register[gazebo_unpauser-10]
+[roslaunch.pmon][INFO] 2020-03-16 14:20:55,757: ProcessMonitor.register[gazebo_unpauser-10] complete
+[roslaunch][INFO] 2020-03-16 14:20:55,757: ... registered process [gazebo_unpauser-10]
+[roslaunch][INFO] 2020-03-16 14:20:55,757: process[gazebo_unpauser-10]: starting os process
+[roslaunch][INFO] 2020-03-16 14:20:55,758: process[gazebo_unpauser-10]: start w/ args [[u'/home/ariac/ariac_ws/src/nist_gear/script/gazebo_unpauser.py', u'__name:=gazebo_unpauser', u'__log:=/root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/gazebo_unpauser-10.log']]
+[roslaunch][INFO] 2020-03-16 14:20:55,758: process[gazebo_unpauser-10]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-03-16 14:20:56,231: process[gazebo_unpauser-10]: started with pid [198]
+[roslaunch][INFO] 2020-03-16 14:20:56,232: ... successfully launched [gazebo_unpauser-10]
+[roslaunch][INFO] 2020-03-16 14:20:56,232: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-03-16 14:20:56,232: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140544363046656)>
+[roslaunch.parent][INFO] 2020-03-16 14:20:56,232: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-03-16 14:20:56,232: spin
+[roslaunch][INFO] 2020-03-16 14:21:05,083: [spawn_gazebo_sensors-5] process has finished cleanly
+log file: /root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/spawn_gazebo_sensors-5*.log
+[roslaunch.pmon][INFO] 2020-03-16 14:21:05,084: ProcessMonitor.unregister[spawn_gazebo_sensors-5] starting
+[roslaunch.pmon][INFO] 2020-03-16 14:21:05,084: ProcessMonitor.unregister[spawn_gazebo_sensors-5] complete
+[roslaunch][INFO] 2020-03-16 14:21:06,187: [gazebo_unpauser-10] process has finished cleanly
+log file: /root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/gazebo_unpauser-10*.log
+[roslaunch.pmon][INFO] 2020-03-16 14:21:06,187: ProcessMonitor.unregister[gazebo_unpauser-10] starting
+[roslaunch.pmon][INFO] 2020-03-16 14:21:06,187: ProcessMonitor.unregister[gazebo_unpauser-10] complete
+[roslaunch][INFO] 2020-03-16 14:21:06,387: [ariac/gantry/gantry_spawner-8] process has finished cleanly
+log file: /root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/ariac-gantry-gantry_spawner-8*.log
+[roslaunch.pmon][INFO] 2020-03-16 14:21:06,387: ProcessMonitor.unregister[ariac/gantry/gantry_spawner-8] starting
+[roslaunch.pmon][INFO] 2020-03-16 14:21:06,387: ProcessMonitor.unregister[ariac/gantry/gantry_spawner-8] complete
+[roslaunch][ERROR] 2020-03-16 14:35:18,880: ================================================================================REQUIRED process [gazebo-3] has died!
+process has finished cleanly
+log file: /root/.ros/log/dcd44ad0-67b2-11ea-b71e-0242ac120016/gazebo-3*.log
+Initiating shutdown!
+================================================================================
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,980: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140544363046656)>
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,981: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140544363046656)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7fd30917a7d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd30917a750>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd309193050>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd30919d110>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd30919d310>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd30919d590>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd30852b390>]
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,982: ProcessMonitor exit: killing ariac/gantry/gantry_controller_spawner-9
+[roslaunch][INFO] 2020-03-16 14:35:18,983: [ariac/gantry/gantry_controller_spawner-9] killing on exit
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,984: ProcessMonitor exit: killing ariac/gantry/robot_state_publisher-7
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,984: ProcessMonitor exit: killing ariac/gantry/joint_state_controller_spawner-6
+[roslaunch][INFO] 2020-03-16 14:35:18,985: process[ariac/gantry/gantry_controller_spawner-9]: killing os process with pid[195] pgid[195]
+[roslaunch][INFO] 2020-03-16 14:35:18,986: [ariac/gantry/robot_state_publisher-7] killing on exit
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,986: ProcessMonitor exit: killing sensors_tf_publisher-4
+[roslaunch.pmon][INFO] 2020-03-16 14:35:18,986: ProcessMonitor exit: killing gazebo-3
+[roslaunch][INFO] 2020-03-16 14:35:18,987: [ariac/gantry/joint_state_controller_spawner-6] killing on exit
+[roslaunch][INFO] 2020-03-16 14:35:18,987: [ariac/gantry/gantry_controller_spawner-9] sending SIGINT to pgid [195]
+[roslaunch][INFO] 2020-03-16 14:35:18,989: process[ariac/gantry/robot_state_publisher-7]: killing os process with pid[173] pgid[173]
+[roslaunch][INFO] 2020-03-16 14:35:18,989: [sensors_tf_publisher-4] killing on exit
+[roslaunch][INFO] 2020-03-16 14:35:18,990: [gazebo-3] killing on exit
+[roslaunch][INFO] 2020-03-16 14:35:18,994: process[sensors_tf_publisher-4]: killing os process with pid[109] pgid[109]
+[roslaunch][INFO] 2020-03-16 14:35:18,992: [ariac/gantry/gantry_controller_spawner-9] sent SIGINT to pgid [195]
+[roslaunch][INFO] 2020-03-16 14:35:18,992: process[ariac/gantry/joint_state_controller_spawner-6]: killing os process with pid[170] pgid[170]
+[roslaunch][INFO] 2020-03-16 14:35:18,992: [ariac/gantry/robot_state_publisher-7] sending SIGINT to pgid [173]
+[roslaunch][INFO] 2020-03-16 14:35:18,994: [sensors_tf_publisher-4] sending SIGINT to pgid [109]
+[roslaunch][INFO] 2020-03-16 14:35:18,995: [ariac/gantry/joint_state_controller_spawner-6] sending SIGINT to pgid [170]
+[roslaunch][INFO] 2020-03-16 14:35:18,995: [ariac/gantry/robot_state_publisher-7] sent SIGINT to pgid [173]
+[roslaunch][INFO] 2020-03-16 14:35:18,996: [sensors_tf_publisher-4] sent SIGINT to pgid [109]
+[roslaunch][INFO] 2020-03-16 14:35:18,996: [ariac/gantry/joint_state_controller_spawner-6] sent SIGINT to pgid [170]
+[roslaunch][INFO] 2020-03-16 14:35:19,097: process[sensors_tf_publisher-4]: SIGINT killed with return value 0
+[roslaunch][INFO] 2020-03-16 14:35:19,197: process[ariac/gantry/robot_state_publisher-7]: SIGINT killed with return value 0
+[roslaunch][INFO] 2020-03-16 14:35:19,696: process[ariac/gantry/gantry_controller_spawner-9]: SIGINT killed with return value 0
+[roslaunch][INFO] 2020-03-16 14:35:19,699: process[ariac/gantry/joint_state_controller_spawner-6]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2020-03-16 14:35:19,699: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2020-03-16 14:35:19,699: [rosout-1] killing on exit
+[roslaunch][INFO] 2020-03-16 14:35:19,699: process[rosout-1]: killing os process with pid[94] pgid[94]
+[roslaunch][INFO] 2020-03-16 14:35:19,699: [rosout-1] sending SIGINT to pgid [94]
+[roslaunch][INFO] 2020-03-16 14:35:19,699: [rosout-1] sent SIGINT to pgid [94]
+[roslaunch][INFO] 2020-03-16 14:35:20,000: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2020-03-16 14:35:20,000: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2020-03-16 14:35:20,000: [master] killing on exit
+[roslaunch][INFO] 2020-03-16 14:35:20,001: process[master]: killing os process with pid[83] pgid[83]
+[roslaunch][INFO] 2020-03-16 14:35:20,001: [master] sending SIGINT to pgid [83]
+[roslaunch][INFO] 2020-03-16 14:35:20,001: [master] sent SIGINT to pgid [83]
+[roslaunch][INFO] 2020-03-16 14:35:20,202: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2020-03-16 14:35:20,202: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-03-16 14:35:20,203: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-03-16 14:35:20,209: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-03-16 14:35:20,209: runner.stop()
+[roslaunch][INFO] 2020-03-16 14:35:20,210: shutting down processing monitor...
+[roslaunch][INFO] 2020-03-16 14:35:20,210: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140544363046656)>
+[roslaunch.pmon][INFO] 2020-03-16 14:35:20,210: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140544363046656)>
+[roslaunch][INFO] 2020-03-16 14:35:20,210: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-03-16 14:35:20,210: done
+[roslaunch.pmon][INFO] 2020-03-16 14:35:20,211: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140544363046656)>
+[rospy.core][INFO] 2020-03-16 14:35:20,211: signal_shutdown [atexit]

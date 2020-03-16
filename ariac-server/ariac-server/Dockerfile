@@ -110,15 +110,18 @@ RUN wget -P /tmp/ https://bitbucket.org/osrf/gazebo_models/get/default.tar.gz \
 
 
  #Download and compile ARIAC 2020
- RUN mkdir -p $HOME/ariac_ws/src
- RUN git clone https://github.com/usnistgov/ARIAC.git  $HOME/ariac_ws/src
+ RUN mkdir -p /home/ariac/ariac_ws/src
+ RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac/ariac_ws/src
  RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                   cd $HOME/ariac_ws && \
+                   cd /home/ariac/ariac_ws && \
                    catkin_make"
 
 
 # setup entrypoint
 COPY ./ariac_entrypoint.sh /
+USER root
+RUN chmod +x /ariac_entrypoint.sh
 COPY ./run_ariac_task.sh /
+RUN chmod +x /run_ariac_task.sh
 
 ENTRYPOINT ["/ariac_entrypoint.sh"]

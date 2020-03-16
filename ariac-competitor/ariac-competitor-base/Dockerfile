@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 RUN wget http://packages.osrfoundation.org/gazebo.key -O - | apt-key add -
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list
 
-# Install the ariac package
+
 RUN apt-get update && apt-get install -y \
         ros-${ROS_DISTRO}-ros-controllers \
         ros-${ROS_DISTRO}-ros-control \
@@ -25,16 +25,6 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Download and compile ARIAC 2020
-RUN mkdir -p /tmp/ariac_ws/src
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                      cd /tmp/ariac_ws/src && \
-                      catkin_init_workspace"
-RUN git clone https://github.com/usnistgov/ARIAC.git
-
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                      cd /tmp/ariac_ws/ && \
-                      catkin_make"
 
 RUN rosdep update
 
@@ -45,10 +35,16 @@ RUN adduser $USERNAME sudo
 WORKDIR /home/$USERNAME
 
 #Download and compile ARIAC 2020
-RUN mkdir -p $HOME/ariac_ws/src
-RUN git clone https://github.com/usnistgov/ARIAC.git  $HOME/ariac_ws/src
+RUN mkdir -p /home/ariac-user/ariac_ws/src
+RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac-user/ariac_ws/src
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                  cd $HOME/ariac_ws && \
+                  cd /home/ariac-user/ariac_ws && \
                   catkin_make"
 
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
+COPY ./ariac_entrypoint.sh /
+USER root
+RUN chmod +x /ariac_entrypoint.sh
+
+
+ENTRYPOINT ["/ariac_entrypoint.sh"]

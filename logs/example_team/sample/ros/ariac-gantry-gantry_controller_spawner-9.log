@@ -1,0 +1,47 @@
+[rospy.client][INFO] 2020-03-16 14:20:55,900: init_node, name[/ariac/gantry/gantry_controller_spawner], pid[195]
+[xmlrpc][INFO] 2020-03-16 14:20:55,900: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-03-16 14:20:55,900: Started XML-RPC server [http://172.18.0.22:43123/]
+[rospy.init][INFO] 2020-03-16 14:20:55,900: ROS Slave URI: [http://172.18.0.22:43123/]
+[rospy.impl.masterslave][INFO] 2020-03-16 14:20:55,900: _ready: http://172.18.0.22:43123/
+[rospy.registration][INFO] 2020-03-16 14:20:55,901: Registering with master node http://172.18.0.22:11311
+[xmlrpc][INFO] 2020-03-16 14:20:55,901: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-03-16 14:20:56,001: registered with master
+[rospy.rosout][INFO] 2020-03-16 14:20:56,001: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-03-16 14:20:56,002: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-03-16 14:20:56,004: initializing /clock core topic
+[rospy.simtime][INFO] 2020-03-16 14:20:56,005: connected to core topic /clock
+[rosout][INFO] 2020-03-16 14:20:56,007: Controller Spawner: Waiting for service /ariac/gantry/controller_manager/load_controller
+[rospy.internal][INFO] 2020-03-16 14:20:56,104: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-03-16 14:21:02,863: topic[/clock] adding connection to [http://172.18.0.22:33789/], count 0
+[rosout][INFO] 2020-03-16 14:21:05,654: Controller Spawner: Waiting for service /ariac/gantry/controller_manager/switch_controller
+[rosout][INFO] 2020-03-16 14:21:05,661: Controller Spawner: Waiting for service /ariac/gantry/controller_manager/unload_controller
+[rosout][INFO] 2020-03-16 14:21:05,668: Loading controller: gantry_controller
+[rosout][INFO] 2020-03-16 14:21:05,911: Loading controller: left_arm_controller
+[rosout][INFO] 2020-03-16 14:21:06,093: Loading controller: right_arm_controller
+[rosout][INFO] 2020-03-16 14:21:06,195: Controller Spawner: Loaded controllers: gantry_controller, left_arm_controller, right_arm_controller
+[rosout][INFO] 2020-03-16 14:21:06,201: Started controllers: gantry_controller, left_arm_controller, right_arm_controller
+[rospy.internal][ERROR] 2020-03-16 14:35:17,617: Unable to initiate TCP/IP socket to 172.18.0.22:38135 (http://172.18.0.22:33789/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.read_header()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 653, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 596, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 38135 to [172.18.0.22:60174 on socket 18]] [/ariac/gantry/gantry_controller_spawner].
+
+[rospy.internal][WARNING] 2020-03-16 14:35:18,642: Unknown error initiating TCP/IP socket to 172.18.0.22:38135 (http://172.18.0.22:33789/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 556, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-03-16 14:35:18,642: topic[/clock] removing connection to http://172.18.0.22:33789/
+[rospy.core][INFO] 2020-03-16 14:35:18,992: signal_shutdown [signal-2]
+[rosout][INFO] 2020-03-16 14:35:18,992: Shutting down spawner. Stopping and unloading controllers...
+[rosout][INFO] 2020-03-16 14:35:18,996: Stopping all controllers...
+[rospy.service][ERROR] 2020-03-16 14:35:19,001: [/ariac/gantry/controller_manager/switch_controller]: lookup service failed with message [no provider]
+[rosout][WARNING] 2020-03-16 14:35:19,001: Controller Spawner error while taking down controllers: service [/ariac/gantry/controller_manager/switch_controller] unavailable
+[rospy.internal][INFO] 2020-03-16 14:35:19,012: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-03-16 14:35:19,013: signal-2
+[rospy.core][INFO] 2020-03-16 14:35:19,629: signal_shutdown [atexit]

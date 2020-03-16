@@ -1,0 +1,623 @@
+Gazebo multi-robot simulator, version 9.12.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1584382859 392736783) [Msg] Waiting for master.
+(1584382859 395395467) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1584382859 395532875) [Msg] Publicized address: 127.0.0.1
+(1584382859 413124216) [Err] [RenderEngine.cc:738] Can't open display: 
+(1584382859 421741400) [Wrn] [RenderEngine.cc:87] Unable to create X window. Rendering will be disabled
+(1584382859 421879269) [Wrn] [RenderEngine.cc:287] Cannot initialize render engine since render path type is NONE. Ignore this warning ifrendering has been turned off on purpose.
+(1584382860 714273827) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1584382862 642509843) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1584382862 654891424) applying Gaussian noise model with mean 0, stddev 0.001, bias -0
+(1584382864 130953700) ODESliderJoint::SetAnchor not implemented.
+(1584382864 142622515) Init world[default]
+(1584382864 359012537) [Dbg] [ProximityRayPlugin.cc:74] Setting update rate of parent sensor to 20 Hz
+(1584382864 450844330) [Dbg] [ROSAriacTaskManagerPlugin.cc:245] ARIAC VERSION: 3.0.6
+(1584382864 451100529) [Dbg] [ROSAriacTaskManagerPlugin.cc:248] ARIAC COMPETITION MODE: 1
+(1584382864 529701517) [Dbg] [ROSLogicalCameraPlugin.cc:133] Using model frame prefix of: logical_camera_1_
+(1584382864 530808543) applying Gaussian noise model with mean 0, stddev 0.001, bias -0
+(1584382864 532601459) applying Gaussian noise model with mean 0, stddev 0.01, bias -0
+(1584382864 534011835) [Dbg] [ROSLogicalCameraPlugin.cc:171] Subscribing to gazebo topic: ~/logical_camera_1/link/logical_camera/models
+(1584382864 536148731) [Dbg] [ROSLogicalCameraPlugin.cc:174] Publishing to ROS topic: /ariac/logical_camera_1
+(1584382864 538919647) [Dbg] [ROSLogicalCameraPlugin.cc:133] Using model frame prefix of: quality_control_sensor_2_
+(1584382864 539165977) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1584382864 539310500) applying Gaussian noise model with mean 0, stddev 0.01, bias -0
+(1584382864 539527241) [Dbg] [ROSLogicalCameraPlugin.cc:171] Subscribing to gazebo topic: ~/quality_control_sensor_2/link/logical_camera/models
+(1584382864 541159158) [Dbg] [ROSLogicalCameraPlugin.cc:174] Publishing to ROS topic: /ariac/quality_control_sensor_2
+(1584382864 541609756) [Dbg] [ROSLogicalCameraPlugin.cc:133] Using model frame prefix of: quality_control_sensor_1_
+(1584382864 541815641) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1584382864 541957412) applying Gaussian noise model with mean 0, stddev 0.01, bias 0
+(1584382864 542165237) [Dbg] [ROSLogicalCameraPlugin.cc:171] Subscribing to gazebo topic: ~/quality_control_sensor_1/link/logical_camera/models
+(1584382864 543794139) [Dbg] [ROSLogicalCameraPlugin.cc:174] Publishing to ROS topic: /ariac/quality_control_sensor_1
+(1584382864 544254493) [Dbg] [ROSLogicalCameraPlugin.cc:133] Using model frame prefix of: logical_camera_2_
+(1584382864 544461066) applying Gaussian noise model with mean 0, stddev 0.001, bias -0
+(1584382864 544618392) applying Gaussian noise model with mean 0, stddev 0.01, bias 0
+(1584382864 544831659) [Dbg] [ROSLogicalCameraPlugin.cc:171] Subscribing to gazebo topic: ~/logical_camera_2/link/logical_camera/models
+(1584382864 546487836) [Dbg] [ROSLogicalCameraPlugin.cc:174] Publishing to ROS topic: /ariac/logical_camera_2
+(1584382864 601147552) [Dbg] [SideContactPlugin.cc:81] [deletion_wall] Watching collisions on: deletion_wall::sensing_link::collision
+(1584382864 604516144) [Dbg] [ObjectDisposalPlugin.cc:47] ObjectDisposalPlugin running at 5 Hz
+(1584382864 635125479) [Dbg] [ConveyorBeltPlugin.cc:47] Using belt power of: 0 %
+(1584382864 635207760) [Dbg] [ConveyorBeltPlugin.cc:53] Using joint name of: [belt_joint]
+(1584382864 635404505) [Dbg] [ConveyorBeltPlugin.cc:65] Using link name of: [conveyor_belt::conveyor_belt_moving::belt]
+(1584382864 732995112) [Dbg] [SideContactPlugin.cc:81] [kit_tray_1] Watching collisions on: agv1::kit_tray_1::kit_tray_1::tray::tray_collision
+(1584382864 733598245) [Dbg] [ROSAriacKitTrayPlugin.cc:65] KitTrayPlugin running at 20 Hz
+(1584382864 735048518) [Wrn] [ROSAriacKitTrayPlugin.cc:204] agv1::kit_tray_1::kit_tray_1::tray: New subscription from node: /gazebo
+(1584382864 743673048) [Dbg] [SideContactPlugin.cc:81] [kit_tray_2] Watching collisions on: agv2::kit_tray_2::kit_tray_2::tray::tray_collision
+(1584382864 743860228) [Dbg] [ROSAriacKitTrayPlugin.cc:65] KitTrayPlugin running at 20 Hz
+(1584382864 744002247) [Wrn] [ROSAriacKitTrayPlugin.cc:204] agv2::kit_tray_2::kit_tray_2::tray: New subscription from node: /gazebo
+(1584382865 209783256) ODESliderJoint::SetAnchor not implemented.
+(1584382865 209816720) ODESliderJoint::SetAnchor not implemented.
+(1584382865 653123052) [Msg] VacuumGripper plugin loaded
+(1584382865 666134336) [Msg] VacuumGripper plugin loaded
+(1584382866 149058413) ODESliderJoint::Anchor not implemented.
+(1584382866 149091728) ODESliderJoint::Anchor not implemented.
+(1584382868 888281823) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 1
+(1584382870 845980938) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 2
+(1584382872 525323247) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 3
+(1584382874 195268489) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 4
+(1584382875 855227351) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 5
+(1584382875 882825802) [Dbg] [ROSAriacTaskManagerPlugin.cc:926] Handle start service called
+(1584382875 885486561) [Dbg] [ROSConveyorBeltPlugin.cc:93] Conveyor control service called with: 100
+(1584382875 885540791) [Dbg] [ROSConveyorBeltPlugin.cc:96] Conveyor control service called by: /gazebo
+(1584382875 885695061) [Dbg] [ConveyorBeltPlugin.cc:164] Received power of: 100, setting velocity to: 0.2
+(1584382875 886021112) [Dbg] [ROSAriacTaskManagerPlugin.cc:1169] Populate conveyor belt called.
+(1584382875 887477132) [Dbg] [ROSAriacTaskManagerPlugin.cc:868] New order to announce: order_0
+(1584382875 887708573) [Dbg] [ROSAriacTaskManagerPlugin.cc:1183] Announcing order: order_0
+
+(1584382875 888797256) [Dbg] [ROSAriacTaskManagerPlugin.cc:876] Assigning order: <Order>
+Start time: [0]
+Shipments:
+<shipment type='order_0_shipment_0' agv='any'>
+<product>
+Type: [piston_rod_part_red]
+Faulty: [false]
+Pose: [0.1 -0.1 0 0 -0 0]
+</product>
+
+<product>
+Type: [gear_part_green]
+Faulty: [false]
+Pose: [-0.1 0 0 0 -0 -3.14159]
+</product>
+
+<product>
+Type: [gear_part_green]
+Faulty: [false]
+Pose: [-0.1 0.15 0 0 -0 0]
+</product>
+
+</shipment>
+
+</order>
+
+(1584382877 536621550) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 6
+(1584382879 209824473) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 7
+(1584382880 880795395) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 8
+(1584382882 569001527) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 9
+(1584382884 241665429) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 10
+(1584382885 923812320) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 11
+(1584382887 605683989) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 12
+(1584382889 285033549) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 13
+(1584382890 985547568) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 14
+(1584382892 652792428) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 15
+(1584382894 336173678) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 16
+(1584382896 11492459) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 17
+(1584382897 691372543) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 18
+(1584382899 368620252) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 19
+(1584382901 45259296) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 20
+(1584382902 732149891) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 21
+(1584382904 411728865) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 22
+(1584382906 89013089) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 23
+(1584382907 772569993) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 24
+(1584382909 435156521) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 25
+(1584382911 111627446) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 26
+(1584382912 775997469) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 27
+(1584382914 450583780) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 28
+(1584382916 120794006) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 29
+(1584382917 791225145) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 30
+(1584382919 468533786) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 31
+(1584382921 154708565) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 32
+(1584382922 830587430) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 33
+(1584382924 515900293) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 34
+(1584382926 181634673) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 35
+(1584382927 849411128) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 36
+(1584382929 528943541) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 37
+(1584382931 196044048) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 38
+(1584382932 869240270) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 39
+(1584382934 536286409) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 40
+(1584382936 217384276) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 41
+(1584382937 891896065) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 42
+(1584382939 575417907) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 43
+(1584382941 262645438) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 44
+(1584382942 931994445) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 45
+(1584382944 607920142) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 46
+(1584382946 280811360) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 47
+(1584382947 955568399) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 48
+(1584382949 631246044) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 49
+(1584382951 304605056) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 50
+(1584382952 994417804) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 51
+(1584382954 671151915) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 52
+(1584382956 353202798) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 53
+(1584382958 37262437) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 54
+(1584382959 705474509) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 55
+(1584382961 371896467) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 56
+(1584382963 46727421) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 57
+(1584382964 715757836) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 58
+(1584382966 384192210) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 59
+(1584382968 53729232) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 60
+(1584382969 726995360) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 61
+(1584382971 412487006) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 62
+(1584382973 88670256) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 63
+(1584382974 775992064) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 64
+(1584382976 444915223) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 65
+(1584382978 117597691) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 66
+(1584382979 793736022) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 67
+(1584382981 473063097) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 68
+(1584382983 147855646) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 69
+(1584382984 818535510) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 70
+(1584382986 490260933) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 71
+(1584382988 183772625) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 72
+(1584382989 865579590) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 73
+(1584382991 557773908) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 74
+(1584382993 226024774) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 75
+(1584382994 894242817) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 76
+(1584382996 567381272) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 77
+(1584382998 240605909) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 78
+(1584382999 914012589) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 79
+(1584383001 589794349) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 80
+(1584383003 263120220) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 81
+(1584383004 942299389) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 82
+(1584383006 628033006) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 83
+(1584383008 312349432) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 84
+(1584383009 984507389) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 85
+(1584383011 654330400) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 86
+(1584383013 328283304) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 87
+(1584383014 997741403) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 88
+(1584383016 672906392) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 89
+(1584383018 348943456) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 90
+(1584383020 26278516) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 91
+(1584383021 707116142) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 92
+(1584383023 384664384) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 93
+(1584383025 73493594) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 94
+(1584383026 745174327) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 95
+(1584383028 423661280) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 96
+(1584383030 97665783) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 97
+(1584383031 767612442) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 98
+(1584383033 437117726) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 99
+(1584383035 137887678) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 100
+(1584383036 812247975) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 101
+(1584383038 487258359) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 102
+(1584383040 166781945) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 103
+(1584383041 866461859) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 104
+(1584383043 547335160) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 105
+(1584383045 215377154) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 106
+(1584383046 890859161) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 107
+(1584383048 580647572) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 108
+(1584383050 251964821) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 109
+(1584383051 935589863) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 110
+(1584383053 618624721) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 111
+(1584383055 295769413) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 112
+(1584383056 980167399) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 113
+(1584383058 666650240) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 114
+(1584383060 336650303) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 115
+(1584383062 8777667) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 116
+(1584383063 685214955) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 117
+(1584383065 360937476) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 118
+(1584383067 52488055) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 119
+(1584383068 724294023) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 120
+(1584383070 408486279) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 121
+(1584383072 83383579) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 122
+(1584383073 754548062) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 123
+(1584383075 439498274) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 124
+(1584383077 112332440) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 125
+(1584383078 785977448) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 126
+(1584383080 469889629) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 127
+(1584383082 150528264) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 128
+(1584383083 827849420) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 129
+(1584383085 495481283) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 130
+(1584383087 175841130) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 131
+(1584383088 850695083) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 132
+(1584383090 529489443) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 133
+(1584383092 226273709) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 134
+(1584383093 897300228) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 135
+(1584383095 567125617) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 136
+(1584383097 252526274) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 137
+(1584383098 929685957) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 138
+(1584383100 606423833) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 139
+(1584383102 275292820) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 140
+(1584383103 948617156) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 141
+(1584383105 632476374) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 142
+(1584383107 306423648) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 143
+(1584383108 989985859) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 144
+(1584383110 653460143) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 145
+(1584383112 323258896) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 146
+(1584383113 989789998) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 147
+(1584383115 671708059) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 148
+(1584383117 337752236) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 149
+(1584383119 10774498) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 150
+(1584383120 686426240) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 151
+(1584383122 362787982) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 152
+(1584383124 40425735) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 153
+(1584383125 729589539) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 154
+(1584383127 403871415) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 155
+(1584383129 76466343) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 156
+(1584383130 748116733) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 157
+(1584383132 418097625) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 158
+(1584383134 107538894) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 159
+(1584383135 779882298) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 160
+(1584383137 464382695) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 161
+(1584383139 140845195) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 162
+(1584383140 825203407) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 163
+(1584383142 510122649) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 164
+(1584383144 179147462) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 165
+(1584383145 865353356) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 166
+(1584383147 541373624) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 167
+(1584383149 218646700) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 168
+(1584383150 896845093) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 169
+(1584383152 585465797) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 170
+(1584383154 270728782) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 171
+(1584383155 952781912) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 172
+(1584383157 632675474) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 173
+(1584383159 312341230) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 174
+(1584383160 997176720) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 175
+(1584383162 672122516) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 176
+(1584383164 343409907) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 177
+(1584383166 19063947) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 178
+(1584383167 692269207) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 179
+(1584383169 360369966) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 180
+(1584383171 49874159) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 181
+(1584383172 728321300) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 182
+(1584383174 404652358) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 183
+(1584383176 78622244) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 184
+(1584383177 759333432) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 185
+(1584383179 432911672) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 186
+(1584383181 104386194) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 187
+(1584383182 779071059) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 188
+(1584383184 458555661) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 189
+(1584383186 132266164) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 190
+(1584383187 811735163) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 191
+(1584383189 492031959) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 192
+(1584383191 170635587) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 193
+(1584383192 854943273) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 194
+(1584383194 554480667) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 195
+(1584383196 223408940) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 196
+(1584383197 957264790) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 197
+(1584383199 724405534) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 198
+(1584383201 467393543) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 199
+(1584383203 196407356) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 200
+(1584383204 918855385) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 201
+(1584383206 621135387) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 202
+(1584383208 323385917) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 203
+(1584383210 16037689) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 204
+(1584383211 694518946) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 205
+(1584383213 376521990) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 206
+(1584383215 59000309) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 207
+(1584383216 725374417) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 208
+(1584383218 400482906) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 209
+(1584383220 76756029) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 210
+(1584383221 757109711) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 211
+(1584383223 431390836) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 212
+(1584383225 140869930) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 213
+(1584383226 824950023) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 214
+(1584383228 524483760) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 215
+(1584383230 195081289) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 216
+(1584383231 868659083) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 217
+(1584383233 543621712) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 218
+(1584383235 226357151) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 219
+(1584383236 907919333) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 220
+(1584383238 584382931) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 221
+(1584383240 255295903) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 222
+(1584383241 930514620) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 223
+(1584383243 607403749) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 224
+(1584383245 287437067) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 225
+(1584383246 967432411) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 226
+(1584383248 644709853) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 227
+(1584383250 315120965) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 228
+(1584383251 988625006) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 229
+(1584383253 674444859) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 230
+(1584383255 357425396) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 231
+(1584383257 28561051) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 232
+(1584383258 705088551) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 233
+(1584383260 384183060) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 234
+(1584383262 63046259) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 235
+(1584383263 729296541) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 236
+(1584383265 400611320) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 237
+(1584383267 89613985) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 238
+(1584383268 765189388) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 239
+(1584383270 442963824) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 240
+(1584383272 129901249) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 241
+(1584383273 805957980) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 242
+(1584383275 489859838) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 243
+(1584383277 164484619) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 244
+(1584383278 841555456) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 245
+(1584383280 517590062) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 246
+(1584383282 203478592) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 247
+(1584383283 892150372) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 248
+(1584383285 563572240) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 249
+(1584383287 252787866) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 250
+(1584383288 950327173) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 251
+(1584383290 649461829) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 252
+(1584383292 322061825) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 253
+(1584383293 996082415) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 254
+(1584383295 685640445) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 255
+(1584383297 382183468) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 256
+(1584383299 80340897) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 257
+(1584383300 754069080) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 258
+(1584383302 425684830) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 259
+(1584383304 107233982) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 260
+(1584383305 802420581) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 261
+(1584383307 480930995) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 262
+(1584383309 154319535) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 263
+(1584383310 823031203) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 264
+(1584383312 500648300) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 265
+(1584383314 166009628) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 266
+(1584383315 840848153) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 267
+(1584383317 507681184) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 268
+(1584383319 184858692) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 269
+(1584383320 858555353) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 270
+(1584383322 536333648) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 271
+(1584383324 225894165) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 272
+(1584383325 899688471) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 273
+(1584383327 580686274) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 274
+(1584383329 268852826) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 275
+(1584383330 941698332) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 276
+(1584383332 614428214) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 277
+(1584383334 292795852) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 278
+(1584383335 963395598) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 279
+(1584383337 634096807) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 280
+(1584383339 307468464) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 281
+(1584383340 991372646) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 282
+(1584383342 664564312) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 283
+(1584383344 344409045) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 284
+(1584383346 23631589) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 285
+(1584383347 700672376) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 286
+(1584383349 372704593) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 287
+(1584383351 61489140) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 288
+(1584383352 733332677) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 289
+(1584383354 408603945) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 290
+(1584383356 99385498) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 291
+(1584383357 776058647) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 292
+(1584383359 453448703) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 293
+(1584383361 129098055) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 294
+(1584383362 816278015) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 295
+(1584383364 489172774) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 296
+(1584383366 161572603) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 297
+(1584383367 837555390) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 298
+(1584383369 511810636) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 299
+(1584383371 183293137) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 300
+(1584383372 859671254) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 301
+(1584383374 531185502) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 302
+(1584383376 204816279) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 303
+(1584383377 875448132) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 304
+(1584383379 550944159) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 305
+(1584383381 230845633) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 306
+(1584383382 938387715) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 307
+(1584383384 632614716) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 308
+(1584383386 320182202) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 309
+(1584383387 993179807) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 310
+(1584383389 676163842) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 311
+(1584383391 354982147) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 312
+(1584383393 28555019) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 313
+(1584383394 706109334) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 314
+(1584383396 385625949) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 315
+(1584383398 55378342) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 316
+(1584383399 720601264) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 317
+(1584383401 401141999) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 318
+(1584383403 74865680) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 319
+(1584383404 756327851) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 320
+(1584383406 428844496) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 321
+(1584383408 104507779) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 322
+(1584383409 787846748) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 323
+(1584383411 458916936) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 324
+(1584383413 163153445) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 325
+(1584383414 835612882) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 326
+(1584383416 506514064) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 327
+(1584383418 178213556) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 328
+(1584383419 869259251) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 329
+(1584383421 549202240) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 330
+(1584383423 226810451) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 331
+(1584383424 901973536) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 332
+(1584383426 590430483) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 333
+(1584383428 278566375) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 334
+(1584383429 959331690) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 335
+(1584383431 637954677) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 336
+(1584383433 316820651) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 337
+(1584383434 987391671) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 338
+(1584383436 667594695) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 339
+(1584383438 339572318) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 340
+(1584383440 44869462) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 341
+(1584383441 719606651) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 342
+(1584383443 393817753) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 343
+(1584383445 67791100) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 344
+(1584383446 750453798) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 345
+(1584383448 426218026) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 346
+(1584383450 96635000) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 347
+(1584383451 770081224) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 348
+(1584383453 446840737) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 349
+(1584383455 123182758) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 350
+(1584383456 806097987) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 351
+(1584383458 486235308) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 352
+(1584383460 171820392) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 353
+(1584383461 857090854) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 354
+(1584383463 543186897) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 355
+(1584383465 219541410) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 356
+(1584383466 891954171) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 357
+(1584383468 576225137) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 358
+(1584383470 252655919) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 359
+(1584383471 914187163) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 360
+(1584383473 584230579) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 361
+(1584383475 258563425) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 362
+(1584383476 934097670) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 363
+(1584383478 610852922) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 364
+(1584383480 286522775) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 365
+(1584383481 967634976) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 366
+(1584383483 646035050) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 367
+(1584383485 340334019) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 368
+(1584383487 16965792) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 369
+(1584383488 717153072) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 370
+(1584383490 399743239) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 371
+(1584383492 76280781) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 372
+(1584383493 754634087) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 373
+(1584383495 429726199) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 374
+(1584383497 106224040) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 375
+(1584383498 773938135) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 376
+(1584383500 448893441) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 377
+(1584383502 123081360) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 378
+(1584383503 793206045) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 379
+(1584383505 493421932) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 380
+(1584383507 167332046) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 381
+(1584383508 834323587) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 382
+(1584383510 503449583) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 383
+(1584383512 185845817) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 384
+(1584383513 861749604) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 385
+(1584383515 535086039) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 386
+(1584383517 222163843) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 387
+(1584383518 906291741) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 388
+(1584383520 584536667) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 389
+(1584383522 253779700) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 390
+(1584383523 934053947) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 391
+(1584383525 606825274) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 392
+(1584383527 288858573) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 393
+(1584383529 1213375) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 394
+(1584383530 695579033) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 395
+(1584383532 373171349) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 396
+(1584383534 44943363) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 397
+(1584383535 714246034) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 398
+(1584383537 387249286) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 399
+(1584383539 64105673) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 400
+(1584383540 747384192) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 401
+(1584383542 420552713) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 402
+(1584383544 98930648) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 403
+(1584383545 771550406) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 404
+(1584383547 451959491) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 405
+(1584383549 116712063) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 406
+(1584383550 785321953) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 407
+(1584383552 460934247) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 408
+(1584383554 134492072) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 409
+(1584383555 809240037) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 410
+(1584383557 487317827) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 411
+(1584383559 162221792) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 412
+(1584383560 840619661) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 413
+(1584383562 518993109) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 414
+(1584383564 205347924) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 415
+(1584383565 872260475) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 416
+(1584383567 542934149) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 417
+(1584383569 222522626) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 418
+(1584383570 891644157) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 419
+(1584383572 562189627) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 420
+(1584383574 234992514) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 421
+(1584383575 930413741) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 422
+(1584383577 607763803) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 423
+(1584383579 286106435) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 424
+(1584383580 984764288) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 425
+(1584383582 680035494) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 426
+(1584383584 352161866) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 427
+(1584383586 34508330) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 428
+(1584383587 710108782) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 429
+(1584383589 388422623) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 430
+(1584383591 68117136) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 431
+(1584383592 744411048) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 432
+(1584383594 413763389) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 433
+(1584383596 100827308) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 434
+(1584383597 781323115) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 435
+(1584383599 456285436) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 436
+(1584383601 128534704) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 437
+(1584383602 844427864) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 438
+(1584383604 536999894) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 439
+(1584383606 219653607) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 440
+(1584383607 895598244) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 441
+(1584383609 570886545) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 442
+(1584383611 252433720) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 443
+(1584383612 936818969) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 444
+(1584383614 611931907) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 445
+(1584383616 289670720) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 446
+(1584383617 961678394) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 447
+(1584383619 631719013) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 448
+(1584383621 308095126) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 449
+(1584383622 988017942) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 450
+(1584383624 663781818) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 451
+(1584383626 330650709) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 452
+(1584383628 13073320) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 453
+(1584383629 684688173) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 454
+(1584383631 361694514) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 455
+(1584383633 33088359) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 456
+(1584383634 706281584) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 457
+(1584383636 374867641) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 458
+(1584383638 48020435) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 459
+(1584383639 728287102) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 460
+(1584383641 426967225) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 461
+(1584383643 111319550) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 462
+(1584383644 787918120) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 463
+(1584383646 484860371) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 464
+(1584383648 167252258) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 465
+(1584383649 893336837) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 466
+(1584383651 576010882) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 467
+(1584383653 250768959) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 468
+(1584383654 926530411) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 469
+(1584383656 595256062) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 470
+(1584383658 272416121) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 471
+(1584383659 953942865) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 472
+(1584383661 643839144) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 473
+(1584383663 318433079) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 474
+(1584383664 999012327) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 475
+(1584383666 671620249) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 476
+(1584383668 338965650) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 477
+(1584383670 11543139) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 478
+(1584383671 684034194) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 479
+(1584383673 366647077) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 480
+(1584383675 64528279) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 481
+(1584383676 754034260) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 482
+(1584383678 436394390) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 483
+(1584383680 110911733) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 484
+(1584383681 797004830) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 485
+(1584383683 472470294) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 486
+(1584383685 147189075) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 487
+(1584383686 822499968) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 488
+(1584383688 508404629) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 489
+(1584383690 180070331) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 490
+(1584383691 855771891) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 491
+(1584383693 531710957) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 492
+(1584383695 208894263) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 493
+(1584383696 881868615) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 494
+(1584383698 561111318) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 495
+(1584383700 241322757) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 496
+(1584383701 916996872) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 497
+(1584383703 612126483) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 498
+(1584383705 288259545) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 499
+(1584383706 966467082) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 500
+(1584383708 659629459) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 501
+(1584383710 343647120) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 502
+(1584383712 17642421) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 503
+(1584383713 699087548) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 504
+(1584383715 382151701) [Dbg] [ROSAriacTaskManagerPlugin.cc:637] Sim time: 505
+(1584383715 422154337) [Dbg] [ROSAriacTaskManagerPlugin.cc:727] End of trial. Final score: 0
+Score breakdown:
+<game_score>
+	Total game score: [0]
+	Total process time: [500.001]
+	Was arm/arm collision?: [0]
+<order_score order_0>
+	Total order score: [0]
+	Completion score: [0]
+	Time taken: [0]
+	Complete: [false]
+	Priority: [1]
+<shipment_score order_0_shipment_0>
+	Completion score: [0]
+	Complete: [false]
+	Submitted: [false]
+	Product presence score: [0]
+	All products bonus: [0]
+	Product pose score: [0]
+	Delivered to correct agv: [false]
+</shipment_score>
+
+</order_score>
+
+</game_score>
+
+(1584383717 422690689) [Msg] Requesting that Gazebo shut down

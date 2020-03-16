@@ -1,0 +1,27 @@
+[rospy.client][INFO] 2020-03-16 14:20:56,741: init_node, name[/spawn_gazebo_sensors], pid[163]
+[xmlrpc][INFO] 2020-03-16 14:20:56,741: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-03-16 14:20:56,742: Started XML-RPC server [http://172.18.0.22:44595/]
+[rospy.init][INFO] 2020-03-16 14:20:56,742: ROS Slave URI: [http://172.18.0.22:44595/]
+[rospy.impl.masterslave][INFO] 2020-03-16 14:20:56,742: _ready: http://172.18.0.22:44595/
+[rospy.registration][INFO] 2020-03-16 14:20:56,742: Registering with master node http://172.18.0.22:11311
+[xmlrpc][INFO] 2020-03-16 14:20:56,743: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-03-16 14:20:56,842: registered with master
+[rospy.rosout][INFO] 2020-03-16 14:20:56,843: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-03-16 14:20:56,849: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-03-16 14:20:56,852: initializing /clock core topic
+[rospy.simtime][INFO] 2020-03-16 14:20:56,859: connected to core topic /clock
+[rosout][INFO] 2020-03-16 14:20:56,870: Loading model XML from ros parameter sensors_description
+[rosout][INFO] 2020-03-16 14:20:56,893: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-03-16 14:20:57,092: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-03-16 14:21:02,845: topic[/clock] adding connection to [http://172.18.0.22:33789/], count 0
+[rosout][INFO] 2020-03-16 14:21:02,927: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2020-03-16 14:21:04,790: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2020-03-16 14:21:04,791: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-03-16 14:21:04,793: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-03-16 14:21:04,794: topic[/clock] removing connection to http://172.18.0.22:33789/
+[rospy.impl.masterslave][INFO] 2020-03-16 14:21:04,794: atexit
+[rospy.internal][WARNING] 2020-03-16 14:21:04,805: Unknown error initiating TCP/IP socket to 172.18.0.22:38135 (http://172.18.0.22:33789/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 559, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+

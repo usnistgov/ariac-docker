@@ -11,4 +11,4 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "${YELLOW}Build competitor base image${NOCOLOR}"
 
-docker build ${DOCKER_ARGS} -t ariac4-competitor-base-melodic:latest ${DIR}/ariac-competitor-base
+docker build ${DOCKER_ARGS} -t ariac/ariac4-competitor-base-melodic:latest ${DIR}/ariac-competitor-base

@@ -1,0 +1,26 @@
+[rospy.client][INFO] 2020-03-16 14:20:56,741: init_node, name[/ariac/gantry/gantry_spawner], pid[187]
+[xmlrpc][INFO] 2020-03-16 14:20:56,741: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-03-16 14:20:56,742: Started XML-RPC server [http://172.18.0.22:44573/]
+[rospy.init][INFO] 2020-03-16 14:20:56,742: ROS Slave URI: [http://172.18.0.22:44573/]
+[rospy.impl.masterslave][INFO] 2020-03-16 14:20:56,742: _ready: http://172.18.0.22:44573/
+[rospy.registration][INFO] 2020-03-16 14:20:56,743: Registering with master node http://172.18.0.22:11311
+[xmlrpc][INFO] 2020-03-16 14:20:56,743: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-03-16 14:20:56,842: registered with master
+[rospy.rosout][INFO] 2020-03-16 14:20:56,843: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-03-16 14:20:56,850: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-03-16 14:20:56,854: initializing /clock core topic
+[rospy.simtime][INFO] 2020-03-16 14:20:56,862: connected to core topic /clock
+[rosout][INFO] 2020-03-16 14:20:56,873: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2020-03-16 14:20:56,928: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-03-16 14:20:57,092: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-03-16 14:21:02,863: topic[/clock] adding connection to [http://172.18.0.22:33789/], count 0
+[rosout][INFO] 2020-03-16 14:21:02,959: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2020-03-16 14:21:05,134: Spawn status: SpawnModel: Successfully spawned entity
+[rosout][INFO] 2020-03-16 14:21:05,134: Waiting for service /gazebo/set_model_configuration
+[rosout][INFO] 2020-03-16 14:21:05,136: temporary hack to **fix** the -J joint position option (issue #93), sleeping for 1 second to avoid race condition.
+[rosout][INFO] 2020-03-16 14:21:06,137: Calling service /gazebo/set_model_configuration
+[rosout][INFO] 2020-03-16 14:21:06,149: Set model configuration status: SetModelConfiguration: success
+[rospy.core][INFO] 2020-03-16 14:21:06,151: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-03-16 14:21:06,154: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-03-16 14:21:06,155: topic[/clock] removing connection to http://172.18.0.22:33789/
+[rospy.impl.masterslave][INFO] 2020-03-16 14:21:06,155: atexit

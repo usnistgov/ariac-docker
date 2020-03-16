@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 
+YELLOW='\033[0;33m'
+NOCOLOR='\033[0m'
+
 # Prepare ROS
+echo -e "${YELLOW}Sourcing ROS${NOCOLOR}"
 . /opt/ros/${ROS_DISTRO}/setup.bash
+echo -e "${YELLOW}Sourcing ARIAC${NOCOLOR}"
+. /home/ariac-user/ariac_ws/devel/setup.bash
+
 
 # Install the necessary dependencies for getting the team's source code
 # Note: there is no need to use `sudo`.
 apt-get update
 apt-get install -y wget unzip
 
-mkdir -p /tmp/ariac_ws/src
-cd /tmp/ariac_ws/src && catkin_init_workspace
-git clone https://github.com/usnistgov/ARIAC.git
-cd /tmp/ariac_ws/ && catkin_make
-source /tmp/ariac_ws/devel/setup.bash
 
 # Create a catkin workspace
 mkdir -p ~/my_team_ws/src
@@ -25,3 +27,5 @@ mv */ariac_example ~/my_team_ws/src
 
 cd ~/my_team_ws
 catkin_make install
+
+rm /tmp/master.zip
