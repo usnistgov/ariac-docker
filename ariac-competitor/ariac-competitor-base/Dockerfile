@@ -44,4 +44,11 @@ RUN adduser --gecos "Development User" --disabled-password $USERNAME
 RUN adduser $USERNAME sudo
 WORKDIR /home/$USERNAME
 
+#Download and compile ARIAC 2020
+RUN mkdir -p $HOME/ariac_ws/src
+RUN git clone https://github.com/usnistgov/ARIAC.git  $HOME/ariac_ws/src
+RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
+                  cd $HOME/ariac_ws && \
+                  catkin_make"
+
 ENTRYPOINT ["/bin/bash"]

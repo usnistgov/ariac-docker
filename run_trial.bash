@@ -40,18 +40,22 @@ ROS_DISTRO=melodic
 LOG_DIR=/ariac/logs
 
 # Ensure any previous containers are killed and removed.
+echo "${YELLOW}Killing any previous containers${NOCOLOR}"
 ./kill_ariac_containers.bash
 
 # Create the network for the containers to talk to each other.
+echo "${YELLOW}Creating network for containers${NOCOLOR}"
 ./ariac-competitor/ariac_network.bash
 
 # Start the competitors container and let it run in the background.
+echo "${YELLOW}Starting competition container in the background${NOCOLOR}"
 COMPETITOR_IMAGE_NAME="ariac-competitor-${TEAM_NAME}"
 ./ariac-competitor/run_competitor_container.bash ${COMPETITOR_IMAGE_NAME} "/run_team_system_with_delay.bash" &
 
 # Start the competition server. When the trial ends, the container will be killed.
 # The trial may end because of time-out, because of completion, or because the user called the
 # /ariac/end_competition service.
+echo "${YELLOW}Starting the competition server${NOCOLOR}"
 ./ariac-server/run_container.bash ${CONTAINER_NAME} ariac/ariac4-server-${ROS_DISTRO}:latest \
   "-v ${TEAM_CONFIG_DIR}:/team_config \
   -v ${COMP_CONFIG_DIR}:/ariac/trial_config \
@@ -60,10 +64,10 @@ COMPETITOR_IMAGE_NAME="ariac-competitor-${TEAM_NAME}"
   "/run_ariac_task.sh /ariac/trial_config/${TRIAL_NAME}.yaml /team_config/team_config.yaml ${LOG_DIR}"
 #
 # # Copy the ROS log files from the competitor's container.
-# echo "Copying ROS log files from competitor container..."
-# docker cp --follow-link ariac-competitor-${TEAM_NAME}-system:/root/.ros/log/latest $HOST_LOG_DIR/ros-competitor
-# echo -e "${GREEN}OK${NOCOLOR}"
-#
-# ./kill_ariac_containers.bash
+echo "${YELLOW}Copying ROS log files from competitor container${NOCOLOR}"
+docker cp --follow-link ariac-competitor-${TEAM_NAME}-system:/root/.ros/log/latest $HOST_LOG_DIR/ros-competitor
+echo -e "${GREEN}OK${NOCOLOR}"
+
+./kill_ariac_containers.bash
 
 exit 0

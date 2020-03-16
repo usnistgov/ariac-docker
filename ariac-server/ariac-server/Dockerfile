@@ -55,17 +55,13 @@ RUN export GZ_VERSION=9 && \
                             ros-melodic-gazebo${GZ_VERSION}-msgs \
                             ros-melodic-gazebo${GZ_VERSION}-ros-control
 
-# 2. Download and compile ARIAC 2020
-RUN mkdir -p /tmp/ariac_ws/src
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                  cd /tmp/ariac_ws/src && \
-                  catkin_init_workspace"
 
-RUN git clone https://github.com/usnistgov/ARIAC.git
 
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                  cd /tmp/ariac_ws/ && \
-                  catkin_make"
+
+# RUN /bin/bash -c "cd /tmp/ariac_ws/src && \
+#                 git clone https://github.com/usnistgov/ARIAC.git"
+
+
 
 
 
@@ -81,6 +77,9 @@ RUN git clone \
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                   cd /tmp/ros_ws/ && \
                   catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/melodic -j2 install "
+
+
+
 
 # Expose port used to communicate with gzserver
 EXPOSE 11345
@@ -108,6 +107,15 @@ RUN wget -P /tmp/ https://bitbucket.org/osrf/gazebo_models/get/default.tar.gz \
  && mkdir -p $HOME/.gazebo/models \
  && tar -xvf /tmp/default.tar.gz -C $HOME/.gazebo/models --strip 1 \
  && rm /tmp/default.tar.gz
+
+
+ #Download and compile ARIAC 2020
+ RUN mkdir -p $HOME/ariac_ws/src
+ RUN git clone https://github.com/usnistgov/ARIAC.git  $HOME/ariac_ws/src
+ RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
+                   cd $HOME/ariac_ws && \
+                   catkin_make"
+
 
 # setup entrypoint
 COPY ./ariac_entrypoint.sh /
