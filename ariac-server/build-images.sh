@@ -22,4 +22,4 @@ if [[ ${USERID} != 0 ]]; then
   DOCKER_ARGS="--build-arg USERID=${USERID}"
 fi
 
-docker build --force-rm ${DOCKER_ARGS} --tag ariac/ariac4-server-melodic:latest $DIR/ariac-server
+docker build --force-rm ${DOCKER_ARGS} --tag ariac-server-melodic:latest $DIR/ariac-server
