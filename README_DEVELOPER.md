@@ -73,7 +73,7 @@ Configure Dockerhub credentials, then:
 ```
 ./push_dockerhub_images.bash <ariac_version> <gazebo_version>
 # e.g.:
-# ./push_dockerhub_images.bash ariac4.0.0 gazebo_9.6
+# ./push_dockerhub_images.bash ariac4.0.0 gazebo_9.12
 ```
 
 This will also update the `lastest` tag on Dockerhub images.
