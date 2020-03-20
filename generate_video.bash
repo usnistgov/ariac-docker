@@ -74,7 +74,7 @@ which catkin_find > /dev/null || { echo "Unable to find catkin_find."\
   "Did you source your ROS setup.bash file?" ; exit 1; }
 
 # Sanity check: Make sure that roslaunch can find gear_playback.launch
-catkin_find --share osrf_gear/launch/gear_playback.launch | grep gear_playback \
+catkin_find --share nist_gear/launch/gear_playback.launch | grep gear_playback \
   > /dev/null || { echo "Unable to find gear_playback.launch . Did you source" \
   "your ARIAC setup.bash file?" ; exit 1; }
 
@@ -89,7 +89,7 @@ x=100
 y=100" > ~/.gazebo/gui.ini
 
 # Start Gazebo in playback mode (paused).
-roslaunch osrf_gear gear_playback.launch state_log_path:=$GZ_LOG_FILE \
+roslaunch nist_gear gear_playback.launch state_log_path:=$GZ_LOG_FILE \
   > $OUTPUT.playback_output.txt 2>&1 &
 
 # Wait and find the Gazebo Window ID.

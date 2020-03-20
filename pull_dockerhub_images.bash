@@ -13,5 +13,5 @@ case ${ROS_DISTRO} in
 esac
 echo "Pulling the ARIAC competition images from dockerhub"
 
-docker pull ariac/ariac4-server-${ROS_DISTRO}:latest
-docker pull ariac/ariac4-competitor-base-${ROS_DISTRO}:latest
+docker pull zeidknist/ariac4-server-${ROS_DISTRO}:latest
+docker pull zeidknist/ariac4-competitor-base-${ROS_DISTRO}:latest

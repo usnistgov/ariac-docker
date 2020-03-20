@@ -56,7 +56,7 @@ COMPETITOR_IMAGE_NAME="ariac-competitor-${TEAM_NAME}"
 # The trial may end because of time-out, because of completion, or because the user called the
 # /ariac/end_competition service.
 echo "${YELLOW}Starting the competition server${NOCOLOR}"
-./ariac-server/run_container.bash ${CONTAINER_NAME} ariac/ariac4-server-${ROS_DISTRO}:latest \
+./ariac-server/run_container.bash ${CONTAINER_NAME} zeidknist/ariac4-server-${ROS_DISTRO}:latest \
   "-v ${TEAM_CONFIG_DIR}:/team_config \
   -v ${COMP_CONFIG_DIR}:/ariac/trial_config \
   -v ${HOST_LOG_DIR}:${LOG_DIR} \
