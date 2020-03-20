@@ -44,8 +44,8 @@ Replace references to `ariac/ariac4-*:latest` images with the local image name, 
 To do this, re-tag the built images:
 
 ```
-docker tag ariac-competitor-base-melodic ariac/ariac4-competitor-base-melodic:latest
-docker tag ariac-server-melodic ariac/ariac4-server-melodic:latest
+docker tag ariac-competitor-base-melodic zeidknist/ariac4-competitor-base-melodic:latest
+docker tag ariac-server-melodic zeidknist/ariac4-server-melodic:latest
 ```
 
 Now test by building a docker image for the example team.
@@ -71,7 +71,7 @@ dpkg -s ariac4
 Configure Dockerhub credentials, then:
 
 ```
-./push_dockerhub_images.bash <ariac_version> <gazebo_version
+./push_dockerhub_images.bash <ariac_version> <gazebo_version>
 # e.g.:
 # ./push_dockerhub_images.bash ariac4.0.0 gazebo_9.6
 ```
