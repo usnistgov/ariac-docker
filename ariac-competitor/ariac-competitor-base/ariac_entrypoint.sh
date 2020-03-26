@@ -10,7 +10,7 @@ source "/opt/ros/melodic/setup.bash" > /dev/null
 # setup ariac environment
 source "/home/ariac-user/ariac_ws/devel/setup.bash"
 #source "/opt/ros/melodic/etc/catkin/profile.d/99_osrf_gear_setup.sh"
-echo "ariac entrypoint executed"
+echo "ariac-competitor entrypoint executed"
 
 # run gear
 # TODO: optionally disable this so a gzclient can be run on the host for development.

@@ -64,9 +64,8 @@ echo "...Starting the competition server"
   "/run_ariac_task.sh /ariac/trial_config/${TRIAL_NAME}.yaml /team_config/team_config.yaml ${LOG_DIR}"
 #
 # # Copy the ROS log files from the competitor's container.
-echo "${YELLOW}Copying ROS log files from competitor container${NOCOLOR}"
+echo "...Copying ROS log files from competitor container"
 docker cp --follow-link ariac-competitor-${TEAM_NAME}-system:/root/.ros/log/latest $HOST_LOG_DIR/ros-competitor
-echo -e "${GREEN}OK${NOCOLOR}"
 
 ./kill_ariac_containers.bash
 

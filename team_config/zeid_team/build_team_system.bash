@@ -21,7 +21,7 @@ apt-get install -y wget unzip
 [ -d "~/my_team_ws" ] && rm -rf ~/my_team_ws
 mkdir -p ~/my_team_ws/src
 
-# Fetch the source code for our team's code
+
 # Do not modify this line
 cd /tmp
 #Modify the next 3 lines to retrieve your code
