@@ -25,37 +25,37 @@ if [ -d "$HOST_LOG_DIR" ]; then
           "overwritten${NOCOLOR}"
 fi
 
-echo -n "Creating $HOST_LOG_DIR directory"
+echo "Creating $HOST_LOG_DIR directory"
 mkdir -p $HOST_LOG_DIR
 
 # TODO: don't rely on script being run in the root directory
 # TODO: error checking for case when files can't be found
 TEAM_CONFIG_DIR=`pwd`/team_config/${TEAM_NAME}
-echo "Using team config: ${TEAM_CONFIG_DIR}/team_config.yaml"
+echo "...Using team config: ${TEAM_CONFIG_DIR}/team_config.yaml"
 COMP_CONFIG_DIR=`pwd`/trial_config
-echo "Using comp config: ${COMP_CONFIG_DIR}/${TRIAL_NAME}.yaml"
+echo "...Using comp config: ${COMP_CONFIG_DIR}/${TRIAL_NAME}.yaml"
 
 ROS_DISTRO=melodic
 
 LOG_DIR=/ariac/logs
 
 # Ensure any previous containers are killed and removed.
-echo "${YELLOW}Killing any previous containers${NOCOLOR}"
+echo "...Killing any previous containers"
 ./kill_ariac_containers.bash
 
 # Create the network for the containers to talk to each other.
-echo "${YELLOW}Creating network for containers${NOCOLOR}"
+echo "...Creating network for containers"
 ./ariac-competitor/ariac_network.bash
 
 # Start the competitors container and let it run in the background.
-echo "${YELLOW}Starting competition container in the background${NOCOLOR}"
+echo "...Starting competition container in the background"
 COMPETITOR_IMAGE_NAME="ariac-competitor-${TEAM_NAME}"
 ./ariac-competitor/run_competitor_container.bash ${COMPETITOR_IMAGE_NAME} "/run_team_system_with_delay.bash" &
 
 # Start the competition server. When the trial ends, the container will be killed.
 # The trial may end because of time-out, because of completion, or because the user called the
 # /ariac/end_competition service.
-echo "${YELLOW}Starting the competition server${NOCOLOR}"
+echo "...Starting the competition server"
 ./ariac-server/run_container.bash ${CONTAINER_NAME} zeidknist/ariac4-server-${ROS_DISTRO}:latest \
   "-v ${TEAM_CONFIG_DIR}:/team_config \
   -v ${COMP_CONFIG_DIR}:/ariac/trial_config \
