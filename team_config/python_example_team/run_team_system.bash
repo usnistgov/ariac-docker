@@ -7,4 +7,4 @@ echo -e "${YELLOW}Running team system${NOCOLOR}"
 
 # Run the example node
 echo "${YELLOW}Launching moveit_example${NOCOLOR}"
-rosrun ariac_example moveit_example.py
+rosrun ariac_example moveit_example_docker.py

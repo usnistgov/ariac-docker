@@ -31,6 +31,6 @@ unzip master.zip
 mv */ariac_example ~/my_team_ws/src
 
 cd ~/my_team_ws
-catkin_make
+catkin build
 #Modify this line to remove your zip file when done
 rm /tmp/master.zip
