@@ -40,6 +40,7 @@ echo -n "Running ARIAC task..."
 
 # Run the task.
 ARIAC_EXIT_ON_COMPLETION=1 rosrun nist_gear gear.py --no-gui -v -f $1 $2 --load-moveit
+#ARIAC_EXIT_ON_COMPLETION=1 rosrun nist_gear gear.py --no-gui -v -f $1 $2
 
 
 

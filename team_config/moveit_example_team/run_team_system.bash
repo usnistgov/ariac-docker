@@ -6,5 +6,5 @@ echo -e "${YELLOW}Running team system${NOCOLOR}"
 . ~/my_team_ws/devel/setup.bash
 
 # Run the example node
-echo "${YELLOW}Launching moveit_example${NOCOLOR}"
+echo -e "${YELLOW}Launching moveit_example_docker.py${NOCOLOR}"
 rosrun ariac_example moveit_example_docker.py
