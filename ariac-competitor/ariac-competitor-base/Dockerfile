@@ -32,19 +32,34 @@ RUN rosdep update
 ENV USERNAME ariac-user
 RUN adduser --gecos "Development User" --disabled-password $USERNAME
 RUN adduser $USERNAME sudo
-WORKDIR /home/$USERNAME
+
+
+#Download and compile ARIAC 2020
+# RUN mkdir -p /home/ariac-user/ariac_ws/src
+# RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac-user/ariac_ws/src
+# RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
+#                   cd /home/ariac-user/ariac_ws && \
+#                   catkin_make"
 
 #Download and compile ARIAC 2020
 RUN mkdir -p /home/ariac-user/ariac_ws/src
+RUN mkdir -p /tmp/gazebo_ws
+
+RUN git clone \
+      https://github.com/osrf/ariac-gazebo_ros_pkgs.git /tmp/gazebo_ws \
+      -b ariac-network-melodic
 RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac-user/ariac_ws/src
+RUN /bin/bash -c "cp -rf /tmp/gazebo_ws /home/ariac-user/ariac_ws/src"
+
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                   cd /home/ariac-user/ariac_ws && \
-                  catkin_make"
+                  catkin_make"                 
 
+#RUN /bin/bash -c "source /home/ariac-user/ariac_ws/devel/setup.bash"
+COPY ./competitor_base_entrypoint.sh /
+#RUN chmod 755 /ariac_entrypoint.sh
+
+WORKDIR /home/$USERNAME
+
+ENTRYPOINT ["/competitor_base_entrypoint.sh"]
 #ENTRYPOINT ["/bin/bash"]
-COPY ./ariac_entrypoint.sh /
-USER root
-RUN chmod +x /ariac_entrypoint.sh
-
-
-ENTRYPOINT ["/ariac_entrypoint.sh"]

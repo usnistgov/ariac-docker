@@ -70,13 +70,13 @@ RUN mkdir -p /tmp/ros_ws/src
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                   cd /tmp/ros_ws/src && \
                   catkin_init_workspace"
-RUN git clone \
-      https://github.com/osrf/ariac-gazebo_ros_pkgs.git /tmp/ros_ws/src/gazebo_ros_pkgs \
-      -b ariac-network-melodic
+# RUN git clone \
+#       https://github.com/osrf/ariac-gazebo_ros_pkgs.git /tmp/ros_ws/src/gazebo_ros_pkgs \
+#       -b ariac-network-melodic
 
-RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-                  cd /tmp/ros_ws/ && \
-                  catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/melodic -j2 install "
+# RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
+#                   cd /tmp/ros_ws/ && \
+#                   catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/melodic -j2 install "
 
 
 
@@ -111,7 +111,14 @@ RUN wget -P /tmp/ https://bitbucket.org/osrf/gazebo_models/get/default.tar.gz \
 
  #Download and compile ARIAC 2020
  RUN mkdir -p /home/ariac/ariac_ws/src
+ RUN mkdir -p /tmp/gazebo_ws
+
+ RUN git clone \
+      https://github.com/osrf/ariac-gazebo_ros_pkgs.git /tmp/gazebo_ws \
+      -b ariac-network-melodic
  RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac/ariac_ws/src
+ RUN /bin/bash -c "cp -rf /tmp/gazebo_ws /home/ariac/ariac_ws/src"
+
  RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                    cd /home/ariac/ariac_ws && \
                    catkin_make"
@@ -119,9 +126,10 @@ RUN wget -P /tmp/ https://bitbucket.org/osrf/gazebo_models/get/default.tar.gz \
 
 # setup entrypoint
 COPY ./ariac_entrypoint.sh /
-USER root
-RUN chmod +x /ariac_entrypoint.sh
+#USER root
+#RUN chmod +x /ariac_entrypoint.sh
 COPY ./run_ariac_task.sh /
-RUN chmod +x /run_ariac_task.sh
+#RUN chmod +x /run_ariac_task.sh
+#USER ariac
 
 ENTRYPOINT ["/ariac_entrypoint.sh"]

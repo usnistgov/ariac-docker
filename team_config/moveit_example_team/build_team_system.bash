@@ -6,7 +6,7 @@ NOCOLOR='\033[0m'
 
 # Prepare ROS
 echo -e "${YELLOW}---Sourcing ROS${NOCOLOR}"
-. /opt/ros/${ROS_DISTRO}/setup.bash
+. /opt/ros/melodic/setup.bash
 echo -e "${YELLOW}---Sourcing ARIAC${NOCOLOR}"
 . /home/ariac-user/ariac_ws/devel/setup.bash
 

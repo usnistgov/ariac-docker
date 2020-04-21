@@ -38,6 +38,11 @@ mkdir -p $DST_FOLDER
 
 echo -n "Running ARIAC task..."
 
+echo -e "${YELLOW}---Sourcing ROS${NOCOLOR}"
+. /opt/ros/melodic/setup.bash
+echo -e "${YELLOW}---Sourcing ARIAC${NOCOLOR}"
+. /home/ariac/ariac_ws/devel/setup.bash
+
 # Run the task.
 ARIAC_EXIT_ON_COMPLETION=1 rosrun nist_gear gear.py --no-gui -v -f $1 $2 --load-moveit
 #ARIAC_EXIT_ON_COMPLETION=1 rosrun nist_gear gear.py --no-gui -v -f $1 $2
