@@ -35,7 +35,7 @@ if [[ $# -gt 1 ]]; then
   esac
 fi
 
-echo "Preparing the team system setup for team ${TEAM_NAME}"
+echo "Preparing the team system setup for team: ${TEAM_NAME}"
 if [[ $# -lt 1 ]]; then
   echo "$0 "
   exit 1

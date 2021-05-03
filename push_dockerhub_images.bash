@@ -10,20 +10,20 @@ LIST_OF_ROS_DISTROS="melodic"
 
 for ROS_DISTRO in ${LIST_OF_ROS_DISTROS}; do
   IMAGE_NAME=ariac-server-${ROS_DISTRO}
-  TAG_NAME=ariac4-server-${ROS_DISTRO}:${ARIAC_VERSION}-${GAZEBO_VERSION}
-  docker tag ${IMAGE_NAME} zeidknist/${TAG_NAME}
-  docker push zeidknist/${TAG_NAME}
+  TAG_NAME=ariac5-server-${ROS_DISTRO}:${ARIAC_VERSION}-${GAZEBO_VERSION}
+  docker tag ${IMAGE_NAME} zeidk/${TAG_NAME}
+  docker push zeidk/${TAG_NAME}
   # Also update the `latest` label to point to the latest image.
-  TAG_NAME=ariac4-server-${ROS_DISTRO}:latest
-  docker tag ${IMAGE_NAME} zeidknist/${TAG_NAME}
-  docker push zeidknist/${TAG_NAME}
+  TAG_NAME=ariac5-server-${ROS_DISTRO}:latest
+  docker tag ${IMAGE_NAME} zeidk/${TAG_NAME}
+  docker push zeidk/${TAG_NAME}
 
   IMAGE_NAME=ariac-competitor-base-${ROS_DISTRO}
-  TAG_NAME=ariac4-competitor-base-${ROS_DISTRO}:${ARIAC_VERSION}
-  docker tag ${IMAGE_NAME} zeidknist/${TAG_NAME}
-  docker push zeidknist/${TAG_NAME}
+  TAG_NAME=ariac5-competitor-base-${ROS_DISTRO}:${ARIAC_VERSION}
+  docker tag ${IMAGE_NAME} zeidk/${TAG_NAME}
+  docker push zeidk/${TAG_NAME}
   # Also update the `latest` label to point to the latest image.
-  TAG_NAME=ariac4-competitor-base-${ROS_DISTRO}:latest
-  docker tag ${IMAGE_NAME} zeidknist/${TAG_NAME}
-  docker push zeidknist/${TAG_NAME}
+  TAG_NAME=ariac5-competitor-base-${ROS_DISTRO}:latest
+  docker tag ${IMAGE_NAME} zeidk/${TAG_NAME}
+  docker push zeidk/${TAG_NAME}
 done

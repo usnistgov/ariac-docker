@@ -1,4 +1,5 @@
-FROM zeidknist/ariac4-competitor-base-melodic:latest
+FROM zeidk/ariac5-competitor-base-melodic:latest
+
 
 COPY ./build_team_system.bash /
 RUN chmod 755 /build_team_system.bash

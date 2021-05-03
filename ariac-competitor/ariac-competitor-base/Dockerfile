@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python-rosdep \
     python-rosinstall \
     python-vcstools \
+    python-rospkg \
     wget \
     && rm -rf /var/lib/apt/lists/*
 RUN wget http://packages.osrfoundation.org/gazebo.key -O - | apt-key add -
@@ -34,14 +35,14 @@ RUN adduser --gecos "Development User" --disabled-password $USERNAME
 RUN adduser $USERNAME sudo
 
 
-#Download and compile ARIAC 2020
+#Download and compile ARIAC 2021
 # RUN mkdir -p /home/ariac-user/ariac_ws/src
 # RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac-user/ariac_ws/src
 # RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
 #                   cd /home/ariac-user/ariac_ws && \
 #                   catkin_make"
 
-#Download and compile ARIAC 2020
+#Download and compile ARIAC 2021
 RUN mkdir -p /home/ariac-user/ariac_ws/src
 RUN mkdir -p /tmp/gazebo_ws
 

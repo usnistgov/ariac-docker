@@ -26,6 +26,10 @@ RUN apt-get update && apt-get install -q -y \
     python-rosdep \
     python-rosinstall \
     python-vcstools \
+    python-catkin-tools \
+    ros-melodic-ros-control* \
+    ros-melodic-control* \
+    ros-melodic-gazebo-ros-control* \
     ros-melodic-robot-state-publisher \
     ros-melodic-camera-info-manager \
     ros-melodic-ros-control \
@@ -46,6 +50,8 @@ RUN apt-get update && apt-get install -q -y \
 # bootstrap rosdep
 RUN rosdep init
 
+
+
 # Need to install a specific version of gazebo_ros_pkgs
 # 1. Remove official packages
 RUN export GZ_VERSION=9 && \
@@ -56,7 +62,10 @@ RUN export GZ_VERSION=9 && \
                             ros-melodic-gazebo${GZ_VERSION}-ros-control
 
 
-
+RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+RUN wget https://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+RUN apt-get update
+RUN apt-get upgrade
 
 # RUN /bin/bash -c "cd /tmp/ariac_ws/src && \
 #                 git clone https://github.com/usnistgov/ARIAC.git"
@@ -103,21 +112,33 @@ USER $USERNAME
 WORKDIR /home/$USERNAME
 
 # Get gazebo models early since it is big
-RUN wget -P /tmp/ https://bitbucket.org/osrf/gazebo_models/get/default.tar.gz \
- && mkdir -p $HOME/.gazebo/models \
- && tar -xvf /tmp/default.tar.gz -C $HOME/.gazebo/models --strip 1 \
- && rm /tmp/default.tar.gz
+
+RUN mkdir -p $HOME/.gazebo/models
+RUN git clone \
+    https://github.com/osrf/gazebo_models $HOME/.gazebo/models
+
+# RUN wget -P /tmp/ https://bitbucket.org/osrf/gazebo_models/get/default.tar.gz \
+#  && mkdir -p $HOME/.gazebo/models \
+#  && tar -xvf /tmp/default.tar.gz -C $HOME/.gazebo/models --strip 1 \
+#  && rm /tmp/default.tar.gz
 
 
- #Download and compile ARIAC 2020
+ #Download and compile ARIAC 2021
  RUN mkdir -p /home/ariac/ariac_ws/src
  RUN mkdir -p /tmp/gazebo_ws
+ RUN mkdir -p /tmp/ariac_ws
 
  RUN git clone \
       https://github.com/osrf/ariac-gazebo_ros_pkgs.git /tmp/gazebo_ws \
       -b ariac-network-melodic
- RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac/ariac_ws/src
+
+ RUN git clone https://github.com/usnistgov/ARIAC.git /tmp/ariac_ws
+
  RUN /bin/bash -c "cp -rf /tmp/gazebo_ws /home/ariac/ariac_ws/src"
+ RUN /bin/bash -c "cp -rf /tmp/ariac_ws /home/ariac/ariac_ws/src"
+
+ RUN /bin/bash -c "rm -rf /tmp/ariac_ws"
+ RUN /bin/bash -c "rm -rf /tmp/gazebo_ws"
 
  RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                    cd /home/ariac/ariac_ws && \
