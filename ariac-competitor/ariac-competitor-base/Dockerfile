@@ -2,6 +2,10 @@ FROM osrf/ros:melodic-desktop-full
 
 USER root
 
+ENV DEBIAN_FRONTEND noninteractive
+# install bootstrap tools
+
+RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 
 # install bootstrap tools
 
@@ -10,13 +14,19 @@ RUN apt-get install -y apt-utils
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     python-rosdep \
+    lsb-release \
+    ros-melodic-rqt-image-view \
+    ros-melodic-image-pipeline \
+    mesa-utils \
     python-rosinstall \
+    libcanberra-gtk* \
     python-vcstools \
     python-rospkg \
     wget \
     && rm -rf /var/lib/apt/lists/*
 RUN wget http://packages.osrfoundation.org/gazebo.key -O - | apt-key add -
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list
+
 
 
 RUN apt-get update && apt-get install -y \
@@ -34,14 +44,6 @@ ENV USERNAME ariac-user
 RUN adduser --gecos "Development User" --disabled-password $USERNAME
 RUN adduser $USERNAME sudo
 
-
-#Download and compile ARIAC 2021
-# RUN mkdir -p /home/ariac-user/ariac_ws/src
-# RUN git clone https://github.com/usnistgov/ARIAC.git  /home/ariac-user/ariac_ws/src
-# RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
-#                   cd /home/ariac-user/ariac_ws && \
-#                   catkin_make"
-
 #Download and compile ARIAC 2021
 RUN mkdir -p /home/ariac-user/ariac_ws/src
 RUN mkdir -p /tmp/gazebo_ws
@@ -56,11 +58,8 @@ RUN /bin/bash -c "source /opt/ros/melodic/setup.bash && \
                   cd /home/ariac-user/ariac_ws && \
                   catkin_make"                 
 
-#RUN /bin/bash -c "source /home/ariac-user/ariac_ws/devel/setup.bash"
 COPY ./competitor_base_entrypoint.sh /
-#RUN chmod 755 /ariac_entrypoint.sh
 
 WORKDIR /home/$USERNAME
 
 ENTRYPOINT ["/competitor_base_entrypoint.sh"]
-#ENTRYPOINT ["/bin/bash"]

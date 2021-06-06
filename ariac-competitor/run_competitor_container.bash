@@ -28,11 +28,20 @@ SERVER_IP="172.18.0.22"
 
 echo -e "${GREEN}Starting docker container named '${CONTAINER}' with IP ${IP}...${NOCOLOR}"
 
+xhost +
+
+DISPLAY="${DISPLAY:-:0}"
 # Keep the container around afterwards (no --rm) in case we need to copy files.
 docker run --name ${CONTAINER} \
+  --env="DISPLAY" \
+  --env="QT_X11_NO_MITSHM=1" \
+  --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
   -e ROS_IP=${IP} \
   -e ROS_MASTER_URI=http://${SERVER_IP}:11311 \
+  -e NO_AT_BRIDGE=1 \
   --ip ${IP} \
   --net ${NETWORK} \
   ${IMAGE_NAME} \
-  ${COMMAND}
+  ${COMMAND} \
+  "source /home/ariac-user/ariac_ws/devel/setup.bash"
+

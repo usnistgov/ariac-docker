@@ -61,10 +61,13 @@ fi
 
 DISPLAY="${DISPLAY:-:0}"
 
+xhost +
+
 docker run --rm --name ${CONTAINER} \
   -e XAUTHORITY=/tmp/.docker.xauth \
   -e ROS_IP=${IP} \
   -e ROS_MASTER_URI=http://${IP}:11311 \
+  -e NO_AT_BRIDGE=1 \
   --ip ${IP} \
   --net ${NETWORK} \
   -v "/etc/localtime:/etc/localtime:ro" \
